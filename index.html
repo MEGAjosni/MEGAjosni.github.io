@@ -1,7 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal GitHub.io Page">
+    <title>Jonas Søeborg Nielsen - Personal Website</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Light Mode (default) */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1e1e1e;
+                color: #f0f0f0;
+            }
+
+            h1, h2, h3 {
+                color: #ffffff;
+            }
+
+            a {
+                color: #66b2ff;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        /* Basic Layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <header>
+            <h1>Jonas Søeborg Nielsen</h1>
+            <p>Scientific Machine Learning | AI Enthusiast | Open Source Contributor</p>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I'm a student of Mathematical Modelling and Computation at Technical University of Denmark with a passion for Scientific Machine Learning.</p>
+        </section>
+
+        <!-- <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1</a> - A description of what this project is about.</li>
+                <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2</a> - A description of this project.</li>
+                <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3</a> - A description of another project.</li>
+            </ul>
+        </section> -->
+
+        <section>
+            <h2>Contact</h2>
+            <p>Feel free to reach out via <a href="mailto:jonas@soeborgnielsen.dk">email</a> or connect with me on <a href="https://www.linkedin.com/in/jonassoeborgnielsen" target="_blank">LinkedIn</a>.</p>
+        </section>
+
+        <footer>
+            <p>© 2024 Jonas Søeborg Nielsen | <a href="https://github.com/MEGAjosni" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
 </body>
 </html>
