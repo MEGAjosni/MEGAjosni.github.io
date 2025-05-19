@@ -1,1002 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jonas Søeborg Nielsen</title>
-
-	<!--
-		- favicon
-	-->
-	<link rel="shortcut icon" href="./assets/images/earth.svg" type="image/svg+xml">
-
-	<!--
-		- custom css link
-	-->
-	<link rel="stylesheet" href="./assets/css/style.css">
-
-	<!--
-		- google font link
-	-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-	
-</head>
-
-<body>
-
-<!--
-- #MAIN
--->
-
-<main>
-
-<!--
-	- #SIDEBAR
--->
-
-<aside class="sidebar" data-sidebar>
-
-	<div class="sidebar-info">
-
-		<figure class="avatar-box">
-			<img src="./assets/images/cozmo.png" alt="Jonas" width="80">
-		</figure>
-
-		<div class="info-content">
-			<h1 class="name" title="Jonas">Jonas Søeborg<br>Nielsen</h1>
-
-			<!-- <p class="title">Mathematical Engineer</p> -->
-			<p class="title">Graduate</p>
-		</div>
-
-		<button class="info_more-btn" data-sidebar-btn>
-			<span>Show Contacts</span>
-
-			<ion-icon name="chevron-down"></ion-icon>
-		</button>
-
-	</div>
-
-	<div class="sidebar-info_more">
-
-		<div class="separator"></div>
-
-		<ul class="contacts-list">
-
-			<li class="contact-item">
-
-				<div class="icon-box">
-					<ion-icon name="mail-outline"></ion-icon>
-				</div>
-
-				<div class="contact-info">
-					<p class="contact-title">Email</p>
-
-					<a href="mailto:jonassoeborgnielsen@icloud.com" class="contact-link">jonassoeborgnielsen@icloud.com</a>
-				</div>
-
-			</li>
-
-			<li class="contact-item">
-
-				<div class="icon-box">
-					<ion-icon name="phone-portrait-outline"></ion-icon>
-				</div>
-
-				<div class="contact-info">
-					<p class="contact-title">Phone</p>
-
-					<a href="tel:+12133522795" class="contact-link">+45 24 64 98 84</a>
-				</div>
-
-			</li>
-
-			<li class="contact-item">
-
-				<div class="icon-box">
-					<ion-icon name="calendar-outline"></ion-icon>
-				</div>
-
-				<div class="contact-info">
-				  <p class="contact-title">Age</p>
-				  <time id="age" datetime="1999-02-18"></time>
-				</div>
-
-				<script>
-				  document.addEventListener('DOMContentLoaded', () => {
-				    const timeEl = document.getElementById('age');
-				    const birthDate = new Date(timeEl.getAttribute('datetime'));
-				    const today = new Date();
-				
-				    let age = today.getFullYear() - birthDate.getFullYear();
-				    const hasHadBirthdayThisYear = (
-				      today.getMonth() > birthDate.getMonth() ||
-				      (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate())
-				    );
-				
-				    if (!hasHadBirthdayThisYear) age--;
-				
-				    timeEl.textContent = `${age} years`;
-				  });
-				</script>
-
-			</li>
-
-			<li class="contact-item">
-
-				<div class="contact-info">
-					<div class="contact-title" style="display: flex; align-items: center; gap: 0.5em;">
-						<ion-icon name="location-outline" style="color: var(--orange-yellow-crayola); vertical-align: middle; margin-right: 0.4em;"></ion-icon>
-						<p style="margin: 0;">Location</p>
-					</div>
-					<address>Kongens Lyngby, Copenhagen, Denmark</address>
-				</div>
-
-
-			</li>
-
-		</ul>
-
-		<div class="separator"></div>
-
-		<ul class="social-list">
-
-			<li class="social-item">
-				<a href="https://www.facebook.com/thedoctorjonesx" class="social-link" target="_blank" rel="noopener noreferrer">
-					<ion-icon name="logo-facebook"></ion-icon>
-				</a>
-			</li>
-
-			<li class="social-item">
-				<a href="https://x.com/TheDoctorJonesX" class="social-link" target="_blank" rel="noopener noreferrer">
-					<ion-icon name="logo-twitter"></ion-icon>
-				</a>
-			</li>
-
-			<li class="social-item">
-				<a href="https://www.instagram.com/thedoctorjonesx/" class="social-link" target="_blank" rel="noopener noreferrer">
-					<ion-icon name="logo-instagram"></ion-icon>
-				</a>
-			</li>
-
-			<li class="social-item">
-				<a href="https://github.com/MEGAjosni" class="social-link" target="_blank" rel="noopener noreferrer">
-					<ion-icon name="logo-github"></ion-icon>
-				</a>
-			</li>
-
-			<li class="social-item">
-				<a href="https://www.linkedin.com/in/jonassoeborgnielsen/" class="social-link" target="_blank" rel="noopener noreferrer">
-					<ion-icon name="logo-linkedin"></ion-icon>
-				</a>
-			</li>
-
-			<li class="social-item">
-				<a href="https://discordapp.com/users/291952694913138690" class="social-link" target="_blank" rel="noopener noreferrer">
-					<ion-icon name="logo-discord"></ion-icon>
-				</a>
-			</li>
-
-		</ul>
-
-	</div>
-
-</aside>
-
-
-
-
-
-<!--
-	- #main-content
--->
-
-<div class="main-content">
-
-	<!--
-		- #NAVBAR
-	-->
-
-	<nav class="navbar">
-
-		<ul class="navbar-list">
-
-			<li class="navbar-item">
-				<button class="navbar-link  active" data-nav-link>About</button>
-			</li>
-
-			<li class="navbar-item">
-				<button class="navbar-link" data-nav-link>Resume</button>
-			</li>
-
-			<!-- <li class="navbar-item">
-				<button class="navbar-link" data-nav-link>Portfolio</button>
-			</li> -->
-
-			<!-- <li class="navbar-item">
-				<button class="navbar-link" data-nav-link>Blog</button>
-			</li> -->
-
-			<!-- <li class="navbar-item">
-				<button class="navbar-link" data-nav-link>Contact</button>
-			</li> -->
-
-		</ul>
-
-	</nav>
-
-
-
-
-
-	<!-- ABOUT -->
-	<article class="about active" data-page="about">
-
-		<header>
-			<h2 class="h2 article-title">About me</h2>
-		</header>
-
-		<section class="about-text">
-			<p>
-			I'm a master student of Mathematical Modelling and Computation at the Technical University of Denmark (DTU). Currently, I'm writing my master thesis on Universal Physics Informed Neural Networks - an exciting topic in the world of scientific machine learning (SciML).
-			</p>
-		</section>
-
-
-		<!--
-			- service
-		-->
-
-		<section class="service">
-
-			<h3 class="h3 service-title">What i'm doing</h3>
-
-			<ul class="service-list">
-
-				<li class="service-item">
-
-					<div class="service-icon-box">
-						<ion-icon name="ellipsis-vertical" style="color: hsl(120, 100%, 72%);"></ion-icon>
-					</div>
-
-					<div class="service-content-box">
-						<h4 class="h4 service-item-title">Scientific Machine Learning</h4>
-
-						<p class="service-item-text">
-							Combining machine learning with scientific principles to solve complex, data-driven problems in science and engineering.
-						</p>
-					</div>
-				</li>
-			</ul>
-		</section>
-	</article>
-
-	<!-- RESUME -->
-	<article class="resume" data-page="resume">
-
-		<header>
-			<h2 class="h2 article-title">Resume</h2>
-		</header>
-	
-		<section class="timeline">
-	
-			<div class="title-wrapper">
-				<div class="icon-box">
-					<ion-icon name="school"></ion-icon>
-				</div>
-				<h3 class="h3">Education</h3>
-			</div>
-	
-			<ol class="timeline-list">
-	
-				<li class="timeline-item">
-					<div class="icon-container" onclick="toggleCourses(this)">
-						<ion-icon name="caret-forward-circle"></ion-icon>
-					</div>
-	
-					<h4 class="h4 timeline-item-title">Technical University of Denmark (DTU)</h4>
-				
-					<span>2022 — Present</span>
-				
-					<p class="timeline-text">
-						Master of Science in Engineering: Mathematical Modelling and Computation.
-					</p>
-				
-					<ul class="courses-list">
-						<h5 class="courses-heading">Master DTU Courses</h5>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01410" target="_blank">
-								<span class="course-number">01410</span>
-								<span class="course-name">Cryptography 1</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01617" target="_blank">
-								<span class="course-number">01617</span>
-								<span class="course-name">Introduction to Dynamical Systems</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02393" target="_blank">
-								<span class="course-number">02393</span>
-								<span class="course-name">Programming in C++</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02409" target="_blank">
-								<span class="course-number">02409</span>
-								<span class="course-name">Multivariate Statistics</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02443" target="_blank">
-								<span class="course-number">02443</span>
-								<span class="course-name">Stochastic Simulation</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02456" target="_blank">
-								<span class="course-number">02456</span>
-								<span class="course-name">Deep Learning</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02477" target="_blank">
-								<span class="course-number">02477</span>
-								<span class="course-name">Bayesian Machine Learning</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02492" target="_blank">
-								<span class="course-number">02492</span>
-								<span class="course-name">Digital Learning Technology and Entrepreneurship</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02501" target="_blank">
-								<span class="course-number">02501</span>
-								<span class="course-name">Advanced Deep Learning in Computer Vision</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02504" target="_blank">
-								<span class="course-number">02504</span>
-								<span class="course-name">Computer Vision</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02582" target="_blank">
-								<span class="course-number">02582</span>
-								<span class="course-name">Computational Data Analysis</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02612" target="_blank">
-								<span class="course-number">02612</span>
-								<span class="course-name">Constrained Optimisation</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02614" target="_blank">
-								<span class="course-number">02614</span>
-								<span class="course-name">High-Performance Computing</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/22525" target="_blank">
-								<span class="course-number">22525</span>
-								<span class="course-name">Medical Image Analysis</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/42114" target="_blank">
-								<span class="course-number">42114</span>
-								<span class="course-name">Integer Programming</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/42115" target="_blank">
-								<span class="course-number">42115</span>
-								<span class="course-name">Networks Optimization</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/42186" target="_blank">
-								<span class="course-number">42186</span>
-								<span class="course-name">Model-Based Machine Learning</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/42504" target="_blank">
-								<span class="course-number">42504</span>
-								<span class="course-name">Innovation in Engineering</span>
-							</a>
-						</li>
-						
-					</ul>
-				</li>
-	
-	
-				<li class="timeline-item">
-					<div class="icon-container" onclick="toggleCourses(this)">
-						<ion-icon name="caret-forward-circle"></ion-icon>
-					</div>
-	
-					<h4 class="h4 timeline-item-title">
-						Technical University of Denmark (DTU)
-					</h4>
-	
-					<span>2019 — 2022</span>
-	
-					<p class="timeline-text">
-						Bachelor of Science in Engineering: Mathematics and Technology.
-					</p>
-	
-					<ul class="courses-list">
-						<h5 class="courses-heading">Bachelor DTU Courses</h5>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01005" target="_blank">
-								<span class="course-number">01005</span>
-								<span class="course-name">Advanced Engineering Mathematics 1</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01017" target="_blank">
-								<span class="course-number">01017</span>
-								<span class="course-name">Discrete Mathematics</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01018" target="_blank">
-								<span class="course-number">01018</span>
-								<span class="course-name">Discrete Mathematics 2: Algebra</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01025" target="_blank">
-								<span class="course-number">01025</span>
-								<span class="course-name">Advanced Mathematics 2 for Mathematics and Technology</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01125" target="_blank">
-								<span class="course-number">01125</span>
-								<span class="course-name">Fundamental Topological Concepts and Metric Spaces</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01227" target="_blank">
-								<span class="course-number">01227</span>
-								<span class="course-name">Graph Theory</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01418" target="_blank">
-								<span class="course-number">01418</span>
-								<span class="course-name">Introduction to Partial Differential Equations</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01666" target="_blank">
-								<span class="course-number">01666</span>
-								<span class="course-name">Project Work - Bachelor in Mathematics and Technology</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02102" target="_blank">
-								<span class="course-number">02102</span>
-								<span class="course-name">Introductory Programming</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02105" target="_blank">
-								<span class="course-number">02105</span>
-								<span class="course-name">Algorithms and Data Structures 1</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02110" target="_blank">
-								<span class="course-number">02110</span>
-								<span class="course-name">Algorithms and Data Structures 2</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02403" target="_blank">
-								<span class="course-number">02403</span>
-								<span class="course-name">Introduction to Mathematical Statistics</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02405" target="_blank">
-								<span class="course-number">02405</span>
-								<span class="course-name">Probability Theory</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02450" target="_blank">
-								<span class="course-number">02450</span>
-								<span class="course-name">Introduction to Machine Learning and Data Mining</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02525" target="_blank">
-								<span class="course-number">02525</span>
-								<span class="course-name">Introduction to Mathematics and Technology</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02526" target="_blank">
-								<span class="course-number">02526</span>
-								<span class="course-name">Mathematical Modeling</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02502" target="_blank">
-								<span class="course-number">02502</span>
-								<span class="course-name">Image Analysis</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02601" target="_blank">
-								<span class="course-number">02601</span>
-								<span class="course-name">Introduction to Numerical Algorithms</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02610" target="_blank">
-								<span class="course-number">02610</span>
-								<span class="course-name">Optimization and Data Fitting</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02623" target="_blank">
-								<span class="course-number">02623</span>
-								<span class="course-name">The Finite Element Method for Partial Differential Equations</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/02635" target="_blank">
-								<span class="course-number">02635</span>
-								<span class="course-name">Mathematical Software Programming</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/26000" target="_blank">
-								<span class="course-number">26000</span>
-								<span class="course-name">General Chemistry</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/42101" target="_blank">
-								<span class="course-number">42101</span>
-								<span class="course-name">Introduction to Operations Research</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/42611" target="_blank">
-								<span class="course-number">42611</span>
-								<span class="course-name">Theory of Science in Engineering</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://findit.dtu.dk/en/catalog/62ab0f925993721d0e8a67c3" target="_blank">
-								<span class="course-number">B01</span>
-								<span class="course-name">Bachelor's Project: Circle Packings</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://kurser.dtu.dk/course/01020" target="_blank">
-								<span class="course-number">S01</span>
-								<span class="course-name">Advanced Linear Algebra (Special Course)</span>
-							</a>
-						</li>
-						<li>
-							<span class="course-number">S01</span>
-							<span class="course-name">Physics-Informed Data-Driven Techniques for Parameter Estimation and Discovery of Hidden Physics (Special Course)</span>
-						</li>
-					</ul>
-				</li>
-	
-	
-				<li class="timeline-item">
-					<div class="icon-container" onclick="toggleCourses(this)">
-						<ion-icon name="caret-forward-circle"></ion-icon>
-					</div>
-	
-					<h4 class="h4 timeline-item-title">
-						Technical Gymnasium (HTX)
-					</h4>
-	
-					<span>2015 — 2018</span>
-	
-					<p class="timeline-text">
-					Upper Secondary Technical Education: Mathematics and Physics.
-					</p>
-	
-					<ul class="courses-list">
-						<h5 class="courses-heading">Topics</h5>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
-							<span class="course-name">Mathematics</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
-							<span class="course-name">Physics</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
-							<span class="course-name">Chemistry</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
-							<span class="course-name">Danish</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
-							<span class="course-name">Construction and Energy</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
-							<span class="course-name">Studyarea</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspB</span>
-							<span class="course-name">English</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspB</span>
-							<span class="course-name">Technology</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspB</span>
-							<span class="course-name">Information Technology</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspC</span>
-							<span class="course-name">History of Technology</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspC</span>
-							<span class="course-name">Biology</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspC</span>
-							<span class="course-name">Business Economics</span>
-						</li>
-						<li>
-							<span class="course-number">&nbsp&nbsp&nbsp&nbspC</span>
-							<span class="course-name">Social Science</span>
-						</li>
-					</ul>
-				</li>
-			</ol>
-		</section>
-	
-		<section class="timeline">
-			<div class="title-wrapper">
-	
-				<div class="icon-box">
-					<ion-icon name="rocket"></ion-icon>
-				</div>
-	
-				<h3 class="h3">Experience</h3>
-			</div>
-	
-			<ol class="timeline-list">
-	
-				<li class="timeline-item" onclick="toggleCourses(this)">
-					<h4 class="h4 timeline-item-title">
-						Technical University of Denmark (DTU)
-					</h4>
-					
-					<span>2024 — Present</span>
-	
-					<p class="timeline-text">
-						Teaching Assistant: Multivariate Statistics, Deep Learning, and Introductory Programming (Python).
-					</p>
-				</li>
-			</ol>
-		</section>
-	</article>
-
-
-	<!--
-		- #PORTFOLIO
-	-->
-	<!-- <article class="portfolio" data-page="portfolio">
-
-		<header>
-			<h2 class="h2 article-title">Portfolio</h2>
-		</header>
-
-		<section class="projects">
-
-			<ul class="filter-list">
-
-				<li class="filter-item">
-					<button class="active" data-filter-btn>All</button>
-				</li>
-
-				<li class="filter-item">
-					<button data-filter-btn>Web design</button>
-				</li>
-
-				<li class="filter-item">
-					<button data-filter-btn>Applications</button>
-				</li>
-
-				<li class="filter-item">
-					<button data-filter-btn>Web development</button>
-				</li>
-
-			</ul>
-
-			<div class="filter-select-box">
-
-				<button class="filter-select" data-select>
-
-					<div class="select-value" data-selecct-value>Select category</div>
-
-					<div class="select-icon">
-						<ion-icon name="chevron-down"></ion-icon>
-					</div>
-
-				</button>
-
-				<ul class="select-list">
-
-					<li class="select-item">
-						<button data-select-item>All</button>
-					</li>
-
-					<li class="select-item">
-						<button data-select-item>Web design</button>
-					</li>
-
-					<li class="select-item">
-						<button data-select-item>Applications</button>
-					</li>
-
-					<li class="select-item">
-						<button data-select-item>Web development</button>
-					</li>
-
-				</ul>
-
-			</div>
-
-			<ul class="project-list">
-
-				<li class="project-item  active" data-filter-item data-category="web development">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-						</figure>
-
-						<h3 class="project-title">Finance</h3>
-
-						<p class="project-category">Web development</p>
-
-					</a>
-				</li>
-
-				<li class="project-item  active" data-filter-item data-category="web development">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-						</figure>
-
-						<h3 class="project-title">Orizon</h3>
-
-						<p class="project-category">Web development</p>
-
-					</a>
-				</li>
-
-				<li class="project-item  active" data-filter-item data-category="web design">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-						</figure>
-
-						<h3 class="project-title">Fundo</h3>
-
-						<p class="project-category">Web design</p>
-
-					</a>
-				</li>
-
-				<li class="project-item  active" data-filter-item data-category="applications">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-						</figure>
-
-						<h3 class="project-title">Brawlhalla</h3>
-
-						<p class="project-category">Applications</p>
-
-					</a>
-				</li>
-
-				<li class="project-item  active" data-filter-item data-category="web design">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-						</figure>
-
-						<h3 class="project-title">DSM.</h3>
-
-						<p class="project-category">Web design</p>
-
-					</a>
-				</li>
-
-				<li class="project-item  active" data-filter-item data-category="web design">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-						</figure>
-
-						<h3 class="project-title">MetaSpark</h3>
-
-						<p class="project-category">Web design</p>
-
-					</a>
-				</li>
-
-				<li class="project-item  active" data-filter-item data-category="web development">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-						</figure>
-
-						<h3 class="project-title">Summary</h3>
-
-						<p class="project-category">Web development</p>
-
-					</a>
-				</li>
-
-				<li class="project-item  active" data-filter-item data-category="applications">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-						</figure>
-
-						<h3 class="project-title">Task Manager</h3>
-
-						<p class="project-category">Applications</p>
-
-					</a>
-				</li>
-
-				<li class="project-item  active" data-filter-item data-category="web development">
-					<a href="#">
-
-						<figure class="project-img">
-							<div class="project-item-icon-box">
-								<ion-icon name="eye-outline"></ion-icon>
-							</div>
-
-							<img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-						</figure>
-
-						<h3 class="project-title">Arrival</h3>
-
-						<p class="project-category">Web development</p>
-
-					</a>
-				</li>
-
-			</ul>
-
-		</section>
-
-	</article> -->
-
-	<!--
-		- #CONTACT
-	-->
-
-	<!-- <article class="contact" data-page="contact">
-
-		<header>
-			<h2 class="h2 article-title">Contact</h2>
-		</header>
-
-		<section class="mapbox" data-mapbox>
-			<figure>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35899.80416414079!2d12.467445979266108!3d55.780426262045545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46524e0cd2198e09%3A0xca6a70136052238a!2s2800%20Kongens%20Lyngby!5e0!3m2!1sda!2sdk!4v1730241106122!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</figure>
-		</section>
-
-		<section class="contact-form">
-
-			<h3 class="h3 form-title">Get in touch via online platforms</h3>
-
-			<form action="#" class="form" data-form>
-
-				<div class="input-wrapper">
-					<input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-					<input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-				</div>
-
-				<textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-				<button class="form-btn" type="submit" disabled data-form-btn>
-					<ion-icon name="paper-plane"></ion-icon>
-					<span>Send Message</span>
-				</button>
-
-			</form>
-			
-
-		</section>
-
-	</article> -->
-
-</div>
-
-</main>
-
-
-<!--
-	- custom js link
--->
-<script src="./assets/js/script.js"></script>
-
-<!--
-	- ionicon link
--->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title -->
+        <title>Jonas S. Nielsen</title>
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- fav-icon -->
+        <!-- <link rel="shortcut icon" href="images/fav-icon.png"> -->
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Devicon -->
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <!-- Scroll animation with AOS -->
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="main-container">
+
+            <!-- Menu and Profile -->
+            <div class="menu-profile">
+                <!-- header -->
+                <header>
+                    <nav>
+                        <!-- Dark light button -->
+                        <button class="dark-light-btn bg-gradient">
+                            <i class="fa-regular fa-sun"></i>
+                            <!-- <i class="fa-solid fa-moon"></i> -->
+                        </button>
+                        <!-- Menu -->
+                        <ul>
+                            <!-- About -->
+                            <li><a href="#about" data-label="About" class="active">
+                                <i class="fa-solid fa-address-book"></i>
+                            </a></li>
+
+                            <!-- Skill -->
+                            <li><a href="#skills" data-label="Technical Skills">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </a></li>
+
+                            <!-- Resume -->
+                            <li><a href="#edu-work" data-label="Resume">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </a></li>
+
+                            <!-- Contact -->
+                            <li><a href="#contact" data-label="Contact">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a></li>
+                            
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- Profile -->
+                <div class="profile-container">
+                    <div class="user-profile bg-gradient">
+
+                        <!-- Profile box -->
+                        <div class="user-profile-container">
+                            <!-- Profile picture -->
+                            <div class="user-profile-img">
+                                <img src="images/profile.png" alt="Profile">
+                            </div>
+
+                            <!-- Profile text -->
+                            <div class="user-profile-text">
+                                <h1>Jonas S. Nielsen</h1>
+                                <!-- <span>Engineer</span> -->
+                                <div class="profile-social-container">
+                                    <a href="https://www.linkedin.com/in/jonassoeborgnielsen/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://discordapp.com/users/291952694913138690" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+                                    <a href="https://github.com/MEGAjosni" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://orcid.org/my-orcid?orcid=0009-0000-6295-6428" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a>
+                                </div>
+                            </div>                           
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="user-profile-btn">
+                            <a href="cv/cv.pdf" download target="_blank">Download CV</a>
+                            <a href="#contact">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+            <!-- Main Content -->
+            <div class="main-content">
+
+                <!-- About -->
+                <section id="about" class="section-container">
+                    <h3>Hello, I'm a <span id="role">Math Engineer</span></h3>
+                    <h1><span>Engineer</span> in applied Math and Data Science</h1>
+                    <p>I'm a passionate engineer with a strong foundation in mathematical modelling and computation. I thrive on solving complex problems and am always eager to learn new technologies and methodologies.</p>
+                    <!-- <h1><span>Engineer</span> in Mathematical Modelling and Computation</h1> -->
+                
+                    <!-- Key numbers -->
+                    <div class="project-container-about">
+                        <div class="project-container-box">
+                            <span>0</span>
+                            <strong>Years of Experience</strong>
+                        </div>
+                        <div class="project-container-box">
+                            <span>0</span>
+                            <strong>Completed Projects</strong>
+                        </div>
+                        <div class="project-container-box">
+                            <span>1</span>
+                            <strong>Publications</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section id="skills" class="section-container">
+                    <!-- Heading -->
+                    <div class="section-heading">
+                        <span><i class="fa-solid fa-layer-group"></i> Technical Skills</span>
+                        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                    </div>
+
+                    <!-- Skills List -->
+                    <div class="skill-box-container">
+                        <!-- Python -->
+                        <div class="skill-box bg-gradient">
+                            <!-- Heading -->
+                            <div class="skill-box-content">
+                                <i class="devicon-python-plain"></i>
+                                <span>Python</span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="skill-box-bar">
+                                <span style="width: 80%"></span>
+                            </div>
+                            <!-- Percentage -->
+                            <span class="skill-box-percentage">80%</span>
+                        </div>
+
+                        <!-- Julia -->
+                        <div class="skill-box bg-gradient">
+                            <!-- Heading -->
+                            <div class="skill-box-content">
+                                <i class="devicon-julia-plain"></i>
+                                <span>Julia</span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="skill-box-bar">
+                                <span style="width: 60%"></span>
+                            </div>
+                            <!-- Percentage -->
+                            <span class="skill-box-percentage">60%</span>
+                        </div>
+
+                        <!-- Matlab -->
+                        <div class="skill-box bg-gradient">
+                            <!-- Heading -->
+                            <div class="skill-box-content">
+                                <i class="devicon-matlab-plain"></i>
+                                <span>Matlab</span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="skill-box-bar">
+                                <span style="width: 60%"></span>
+                            </div>
+                            <!-- Percentage -->
+                            <span class="skill-box-percentage">60%</span>
+                        </div>
+
+                        <!-- C/C++ -->
+                        <div class="skill-box bg-gradient">
+                            <!-- Heading -->
+                            <div class="skill-box-content">
+                                <i class="devicon-cplusplus-plain"></i>
+                                <span>C/C++</span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="skill-box-bar">
+                                <span style="width: 50%"></span>
+                            </div>
+                            <!-- Percentage -->
+                            <span class="skill-box-percentage">50%</span>
+                        </div>
+
+                        <!-- R -->
+                        <div class="skill-box bg-gradient">
+                            <!-- Heading -->
+                            <div class="skill-box-content">
+                                <i class="devicon-r-plain"></i>
+                                <span>R</span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="skill-box-bar">
+                                <span style="width: 50%"></span>
+                            </div>
+                            <!-- Percentage -->
+                            <span class="skill-box-percentage">50%</span>
+                        </div>
+
+                        <!-- Java -->
+                        <div class="skill-box bg-gradient">
+                            <!-- Heading -->
+                            <div class="skill-box-content">
+                                <i class="devicon-java-plain"></i>
+                                <span>Java</span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="skill-box-bar">
+                                <span style="width: 40%"></span>
+                            </div>
+                            <!-- Percentage -->
+                            <span class="skill-box-percentage">40%</span>
+                        </div>
+
+                        <!-- HTML -->
+                        <div class="skill-box bg-gradient">
+                            <!-- Heading -->
+                            <div class="skill-box-content">
+                                <i class="devicon-html5-plain"></i>
+                                <span>HTML</span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="skill-box-bar">
+                                <span style="width: 20%"></span>
+                            </div>
+                            <!-- Percentage -->
+                            <span class="skill-box-percentage">20%</span>
+                        </div>
+
+                        <!-- LaTeX -->
+                        <div class="skill-box bg-gradient">
+                            <!-- Heading -->
+                            <div class="skill-box-content">
+                                <i class="devicon-latex-original"></i>
+                                <span>LaTeX</span>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="skill-box-bar">
+                                <span style="width: 80%"></span>
+                            </div>
+                            <!-- Percentage -->
+                            <span class="skill-box-percentage">80%</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Work & Education -->
+                <section id="edu-work" class="section-container">
+
+                    <div class="section-heading">
+                        <span><i class="fa-solid fa-file-lines"></i> Resume</span>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="section-heading">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    </div>
+
+
+                    <div class="edu-work-box-container">
+                        
+                        <!-- Master -->
+                        <div class="edu-work-box">
+                            <span class="edu-work-year">Sep. 2022 - Mar. 2025</span>
+                            <strong>MSc Eng Mathematical Modeling and Computation</strong>
+                            <span class="edu-work-location">Technical University of Denmark - DTU</span>
+                            <p>I have specialized in machine learning techniques focusing on deep learning, computer vision, Bayesian and model-based machine learning, computational data analysis, and high-performance computing. My thesis involved a deep investigation into Universal Physics-Informed Neural Networks for discovering hidden/unknown dynamics in dynamical systems.</p>
+                        </div>
+
+                        <!-- Bachelor -->
+                        <div class="edu-work-box">
+                            <span class="edu-work-year">Sep. 2019 - May 2022</span>
+                            <strong>BSc Eng Mathematics and Technology</strong>
+                            <span class="edu-work-location">Technical University of Denmark - DTU</span>
+                            <p>I have acquired fundamental knowledge and skills in applied mathematics and data-driven techniques with a focus on mathematical modelling, optimization, and numerical methods through courses in machine learning, graph theory, image analysis, operations research, numerical algorithms, simulation, statistics, probability, advanced mathematics, and programming.</p>
+                        </div>
+
+                        <!-- HTX -->
+                        <div class="edu-work-box">
+                            <span class="edu-work-year">Aug. 2015 - Jun. 2018</span>
+                            <strong>Gymnasium - Higher Technical Exam (HTX)</strong>
+                            <span class="edu-work-location">Erhvervsskolen Nordsjælland</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Work -->
+                    <div class="section-heading" style="margin-top: 1rem;">
+                        <h3><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+                    </div>
+
+                    <div class="edu-work-box-container">
+                        
+                        <!-- DTU -->
+                        <div class="edu-work-box">
+                            <span class="edu-work-year">Sep. 2024 - Dec. 2024</span>
+                            <strong>Class Teacher / Teaching Assistant</strong>
+                            <span class="edu-work-location">Technical University of Denmark - DTU</span>
+                            <p>As a teaching assistant in the courses Deep Learning, Introduction to Programming, and Multivariate Statistics, I have developed strong skills in communicating technically complex topics to individuals with limited prior knowledge, which has strengthened my abilities in both communication and technical guidance.</p>
+                        </div>
+
+                        <!-- McDonald's -->
+                        <div class="edu-work-box">
+                            <span class="edu-work-year">Jul. 2014 - Okt. 2021</span>
+                            <strong>Service Employee / Crew Trainer</strong>
+                            <span class="edu-work-location">McDonald's Hillerød</span>
+                            <p>Throughout 7.5 years, I worked initially as a service employee for 2 years and since 5.5 years as a Crew Trainer. My time at McDonald's has provided me with valuable skills in teamwork, effective communication, thriving in a fast-paced environment and managing stressful situations. Additionally, I have also developed a strong sense of responsibility, both for my own growth within an organisation and supporting the development of others, as well as gaining a deep respect for schedules, structure and leadership.</p>
+                        </div>
+
+                    </div>
+
+
+                </section>
+                
+                <!-- Contact -->
+                <section id="contact" class="section-container">
+
+                    <!-- Heading -->
+                    <div class="section-heading">
+                        <span><i class="fa-solid fa-paper-plane"></i> Contact</span>
+                        <h3>Let's Connect!</h3>
+                    </div>
+
+                    <div class="contact-box-container">
+                        <!-- Phone -->
+                        <div class="contact-box bg-gradient">
+                            <div class="contact-box-icon">
+                                <i class="fa-solid fa-phone"></i>
+                                <strong>Phone</strong>
+                            </div>
+                            <span>+45 24 64 98 84</span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-box bg-gradient">
+                            <div class="contact-box-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                                <strong>Email</strong>
+                            </div>
+                            <span>jonassoeborgnielsen@icloud.com</span>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-box bg-gradient">
+                            <div class="contact-box-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <strong>Location</strong>
+                            </div>
+                            <span>Kongens Lyngby, Copenhagen, Denmark</span>
+                        </div>
+
+
+
+                    </div>
+                    
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130885.04437438227!2d12.42624533632221!3d55.780502136294245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46524e0cd2198e09%3A0xca6a70136052238a!2s2800%20Kongens%20Lyngby!5e0!3m2!1sda!2sdk!4v1747601240311!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+
+
+            </div>
+
+        </div>
+        
+        <!-- JavaScript -->
+        <script>
+            // Word Animation
+            document.addEventListener("DOMContentLoaded", () => {
+                const roles = ["Machine Learning Engineer", "Mathematician", "Data Scientist", "Master of Science"];
+                const roleElement = document.getElementById("role");
+                let roleIndex = 0;
+                let charIndex = 0;
+                let typingInterval;
+
+                function typeRole() {
+                    roleElement.style.opacity = 0;
+                    setTimeout(() => {
+                        roleElement.textContent = "";
+                        charIndex = 0;
+
+                        typingInterval = setInterval(() => {
+                            if (charIndex < roles[roleIndex].length) {
+                                roleElement.textContent += roles[roleIndex].charAt(charIndex);
+                                charIndex++;
+                            } else {
+                                clearInterval(typingInterval);
+                                setTimeout(() => {
+                                    roleIndex = (roleIndex + 1) % roles.length;
+                                    typeRole();
+                                }, 1000); // Pause before starting the next word
+                            }
+                        }, 150); // Typing speed
+
+                        roleElement.style.opacity = 1;
+                    }, 500); // Fade out duration
+                }
+                // Start typing the first role
+                typeRole();
+            });
+        
+            // Dark/Light Mode Toggle
+            document.addEventListener("DOMContentLoaded", () => {
+                const toggleButton = document.querySelector(".dark-light-btn");
+                const htmlElement = document.documentElement;
+
+                const currentTheme = localStorage.getItem("mode");
+
+                if (currentTheme == "light") {
+                    htmlElement.classList.add("light-mode");
+                    toggleButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
+                }
+
+                toggleButton.addEventListener("click", () => {
+                    htmlElement.classList.toggle("light-mode");
+
+                    // Change icon
+                    const isLightMode = htmlElement.classList.contains("light-mode");
+                    toggleButton.innerHTML = isLightMode ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+
+                    // Save the current theme in local storage
+                    localStorage.setItem("mode", isLightMode ? "light" : "dark");
+                });
+
+
+                // Nav highlight
+                const section = document.querySelectorAll("section");
+                const navLinks = document.querySelectorAll("ul li a");
+
+                function setActiveLink() {
+                    let currentSection = "";
+                    section.forEach((section) => {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.offsetHeight;
+
+                        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                            currentSection = section.getAttribute("id");
+                        }
+                    });
+
+                    navLinks.forEach((link) => {
+                        link.classList.remove("active");
+                        if (link.getAttribute("href") === `#${currentSection}`) {
+                            link.classList.add("active");
+                        }
+                    })
+                }
+
+                window.addEventListener("scroll", setActiveLink);
+                        
+
+            });
+
+
+
+        </script>
+
+    </body>
 
 </html>

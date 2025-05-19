@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jonas Søeborg Nielsen</title>
+
+	<!--
+		- favicon
+	-->
+	<link rel="shortcut icon" href="./assets/images/earth.svg" type="image/svg+xml">
+
+	<!--
+		- custom css link
+	-->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!--
+		- google font link
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+
+<!--
+- #MAIN
+-->
+
+<main>
+
+<!--
+	- #SIDEBAR
+-->
+
+<aside class="sidebar" data-sidebar>
+
+	<div class="sidebar-info">
+
+		<figure class="avatar-box">
+			<img src="./assets/images/cozmo.png" alt="Jonas" width="80">
+		</figure>
+
+		<div class="info-content">
+			<h1 class="name" title="Jonas">Jonas Søeborg<br>Nielsen</h1>
+
+			<!-- <p class="title">Mathematical Engineer</p> -->
+			<p class="title">Graduate</p>
+		</div>
+
+		<button class="info_more-btn" data-sidebar-btn>
+			<span>Show Contacts</span>
+
+			<ion-icon name="chevron-down"></ion-icon>
+		</button>
+
+	</div>
+
+	<div class="sidebar-info_more">
+
+		<div class="separator"></div>
+
+		<ul class="contacts-list">
+
+			<li class="contact-item">
+
+				<div class="icon-box">
+					<ion-icon name="mail-outline"></ion-icon>
+				</div>
+
+				<div class="contact-info">
+					<p class="contact-title">Email</p>
+
+					<a href="mailto:jonassoeborgnielsen@icloud.com" class="contact-link">jonassoeborgnielsen@icloud.com</a>
+				</div>
+
+			</li>
+
+			<li class="contact-item">
+
+				<div class="icon-box">
+					<ion-icon name="phone-portrait-outline"></ion-icon>
+				</div>
+
+				<div class="contact-info">
+					<p class="contact-title">Phone</p>
+
+					<a href="tel:+12133522795" class="contact-link">+45 24 64 98 84</a>
+				</div>
+
+			</li>
+
+			<li class="contact-item">
+
+				<div class="icon-box">
+					<ion-icon name="calendar-outline"></ion-icon>
+				</div>
+
+				<div class="contact-info">
+				  <p class="contact-title">Age</p>
+				  <time id="age" datetime="1999-02-18"></time>
+				</div>
+
+				<script>
+				  document.addEventListener('DOMContentLoaded', () => {
+				    const timeEl = document.getElementById('age');
+				    const birthDate = new Date(timeEl.getAttribute('datetime'));
+				    const today = new Date();
+				
+				    let age = today.getFullYear() - birthDate.getFullYear();
+				    const hasHadBirthdayThisYear = (
+				      today.getMonth() > birthDate.getMonth() ||
+				      (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate())
+				    );
+				
+				    if (!hasHadBirthdayThisYear) age--;
+				
+				    timeEl.textContent = `${age} years`;
+				  });
+				</script>
+
+			</li>
+
+			<li class="contact-item">
+
+				<div class="contact-info">
+					<div class="contact-title" style="display: flex; align-items: center; gap: 0.5em;">
+						<ion-icon name="location-outline" style="color: var(--orange-yellow-crayola); vertical-align: middle; margin-right: 0.4em;"></ion-icon>
+						<p style="margin: 0;">Location</p>
+					</div>
+					<address>Kongens Lyngby, Copenhagen, Denmark</address>
+				</div>
+
+
+			</li>
+
+		</ul>
+
+		<div class="separator"></div>
+
+		<ul class="social-list">
+
+			<li class="social-item">
+				<a href="https://www.facebook.com/thedoctorjonesx" class="social-link" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-facebook"></ion-icon>
+				</a>
+			</li>
+
+			<li class="social-item">
+				<a href="https://x.com/TheDoctorJonesX" class="social-link" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-twitter"></ion-icon>
+				</a>
+			</li>
+
+			<li class="social-item">
+				<a href="https://www.instagram.com/thedoctorjonesx/" class="social-link" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-instagram"></ion-icon>
+				</a>
+			</li>
+
+			<li class="social-item">
+				<a href="https://github.com/MEGAjosni" class="social-link" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-github"></ion-icon>
+				</a>
+			</li>
+
+			<li class="social-item">
+				<a href="https://www.linkedin.com/in/jonassoeborgnielsen/" class="social-link" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a>
+			</li>
+
+			<li class="social-item">
+				<a href="https://discordapp.com/users/291952694913138690" class="social-link" target="_blank" rel="noopener noreferrer">
+					<ion-icon name="logo-discord"></ion-icon>
+				</a>
+			</li>
+
+		</ul>
+
+	</div>
+
+</aside>
+
+
+
+
+
+<!--
+	- #main-content
+-->
+
+<div class="main-content">
+
+	<!--
+		- #NAVBAR
+	-->
+
+	<nav class="navbar">
+
+		<ul class="navbar-list">
+
+			<li class="navbar-item">
+				<button class="navbar-link  active" data-nav-link>About</button>
+			</li>
+
+			<li class="navbar-item">
+				<button class="navbar-link" data-nav-link>Resume</button>
+			</li>
+
+			<!-- <li class="navbar-item">
+				<button class="navbar-link" data-nav-link>Portfolio</button>
+			</li> -->
+
+			<!-- <li class="navbar-item">
+				<button class="navbar-link" data-nav-link>Blog</button>
+			</li> -->
+
+			<!-- <li class="navbar-item">
+				<button class="navbar-link" data-nav-link>Contact</button>
+			</li> -->
+
+		</ul>
+
+	</nav>
+
+
+
+
+
+	<!-- ABOUT -->
+	<article class="about active" data-page="about">
+
+		<header>
+			<h2 class="h2 article-title">About me</h2>
+		</header>
+
+		<section class="about-text">
+			<p>
+			I'm a master student of Mathematical Modelling and Computation at the Technical University of Denmark (DTU). Currently, I'm writing my master thesis on Universal Physics Informed Neural Networks - an exciting topic in the world of scientific machine learning (SciML).
+			</p>
+		</section>
+
+
+		<!--
+			- service
+		-->
+
+		<section class="service">
+
+			<h3 class="h3 service-title">What i'm doing</h3>
+
+			<ul class="service-list">
+
+				<li class="service-item">
+
+					<div class="service-icon-box">
+						<ion-icon name="ellipsis-vertical" style="color: hsl(120, 100%, 72%);"></ion-icon>
+					</div>
+
+					<div class="service-content-box">
+						<h4 class="h4 service-item-title">Scientific Machine Learning</h4>
+
+						<p class="service-item-text">
+							Combining machine learning with scientific principles to solve complex, data-driven problems in science and engineering.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</article>
+
+	<!-- RESUME -->
+	<article class="resume" data-page="resume">
+
+		<header>
+			<h2 class="h2 article-title">Resume</h2>
+		</header>
+	
+		<section class="timeline">
+	
+			<div class="title-wrapper">
+				<div class="icon-box">
+					<ion-icon name="school"></ion-icon>
+				</div>
+				<h3 class="h3">Education</h3>
+			</div>
+	
+			<ol class="timeline-list">
+	
+				<li class="timeline-item">
+					<div class="icon-container" onclick="toggleCourses(this)">
+						<ion-icon name="caret-forward-circle"></ion-icon>
+					</div>
+	
+					<h4 class="h4 timeline-item-title">Technical University of Denmark (DTU)</h4>
+				
+					<span>2022 — Present</span>
+				
+					<p class="timeline-text">
+						Master of Science in Engineering: Mathematical Modelling and Computation.
+					</p>
+				
+					<ul class="courses-list">
+						<h5 class="courses-heading">Master DTU Courses</h5>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01410" target="_blank">
+								<span class="course-number">01410</span>
+								<span class="course-name">Cryptography 1</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01617" target="_blank">
+								<span class="course-number">01617</span>
+								<span class="course-name">Introduction to Dynamical Systems</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02393" target="_blank">
+								<span class="course-number">02393</span>
+								<span class="course-name">Programming in C++</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02409" target="_blank">
+								<span class="course-number">02409</span>
+								<span class="course-name">Multivariate Statistics</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02443" target="_blank">
+								<span class="course-number">02443</span>
+								<span class="course-name">Stochastic Simulation</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02456" target="_blank">
+								<span class="course-number">02456</span>
+								<span class="course-name">Deep Learning</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02477" target="_blank">
+								<span class="course-number">02477</span>
+								<span class="course-name">Bayesian Machine Learning</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02492" target="_blank">
+								<span class="course-number">02492</span>
+								<span class="course-name">Digital Learning Technology and Entrepreneurship</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02501" target="_blank">
+								<span class="course-number">02501</span>
+								<span class="course-name">Advanced Deep Learning in Computer Vision</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02504" target="_blank">
+								<span class="course-number">02504</span>
+								<span class="course-name">Computer Vision</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02582" target="_blank">
+								<span class="course-number">02582</span>
+								<span class="course-name">Computational Data Analysis</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02612" target="_blank">
+								<span class="course-number">02612</span>
+								<span class="course-name">Constrained Optimisation</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02614" target="_blank">
+								<span class="course-number">02614</span>
+								<span class="course-name">High-Performance Computing</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/22525" target="_blank">
+								<span class="course-number">22525</span>
+								<span class="course-name">Medical Image Analysis</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/42114" target="_blank">
+								<span class="course-number">42114</span>
+								<span class="course-name">Integer Programming</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/42115" target="_blank">
+								<span class="course-number">42115</span>
+								<span class="course-name">Networks Optimization</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/42186" target="_blank">
+								<span class="course-number">42186</span>
+								<span class="course-name">Model-Based Machine Learning</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/42504" target="_blank">
+								<span class="course-number">42504</span>
+								<span class="course-name">Innovation in Engineering</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+	
+	
+				<li class="timeline-item">
+					<div class="icon-container" onclick="toggleCourses(this)">
+						<ion-icon name="caret-forward-circle"></ion-icon>
+					</div>
+	
+					<h4 class="h4 timeline-item-title">
+						Technical University of Denmark (DTU)
+					</h4>
+	
+					<span>2019 — 2022</span>
+	
+					<p class="timeline-text">
+						Bachelor of Science in Engineering: Mathematics and Technology.
+					</p>
+	
+					<ul class="courses-list">
+						<h5 class="courses-heading">Bachelor DTU Courses</h5>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01005" target="_blank">
+								<span class="course-number">01005</span>
+								<span class="course-name">Advanced Engineering Mathematics 1</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01017" target="_blank">
+								<span class="course-number">01017</span>
+								<span class="course-name">Discrete Mathematics</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01018" target="_blank">
+								<span class="course-number">01018</span>
+								<span class="course-name">Discrete Mathematics 2: Algebra</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01025" target="_blank">
+								<span class="course-number">01025</span>
+								<span class="course-name">Advanced Mathematics 2 for Mathematics and Technology</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01125" target="_blank">
+								<span class="course-number">01125</span>
+								<span class="course-name">Fundamental Topological Concepts and Metric Spaces</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01227" target="_blank">
+								<span class="course-number">01227</span>
+								<span class="course-name">Graph Theory</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01418" target="_blank">
+								<span class="course-number">01418</span>
+								<span class="course-name">Introduction to Partial Differential Equations</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01666" target="_blank">
+								<span class="course-number">01666</span>
+								<span class="course-name">Project Work - Bachelor in Mathematics and Technology</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02102" target="_blank">
+								<span class="course-number">02102</span>
+								<span class="course-name">Introductory Programming</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02105" target="_blank">
+								<span class="course-number">02105</span>
+								<span class="course-name">Algorithms and Data Structures 1</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02110" target="_blank">
+								<span class="course-number">02110</span>
+								<span class="course-name">Algorithms and Data Structures 2</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02403" target="_blank">
+								<span class="course-number">02403</span>
+								<span class="course-name">Introduction to Mathematical Statistics</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02405" target="_blank">
+								<span class="course-number">02405</span>
+								<span class="course-name">Probability Theory</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02450" target="_blank">
+								<span class="course-number">02450</span>
+								<span class="course-name">Introduction to Machine Learning and Data Mining</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02525" target="_blank">
+								<span class="course-number">02525</span>
+								<span class="course-name">Introduction to Mathematics and Technology</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02526" target="_blank">
+								<span class="course-number">02526</span>
+								<span class="course-name">Mathematical Modeling</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02502" target="_blank">
+								<span class="course-number">02502</span>
+								<span class="course-name">Image Analysis</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02601" target="_blank">
+								<span class="course-number">02601</span>
+								<span class="course-name">Introduction to Numerical Algorithms</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02610" target="_blank">
+								<span class="course-number">02610</span>
+								<span class="course-name">Optimization and Data Fitting</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02623" target="_blank">
+								<span class="course-number">02623</span>
+								<span class="course-name">The Finite Element Method for Partial Differential Equations</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/02635" target="_blank">
+								<span class="course-number">02635</span>
+								<span class="course-name">Mathematical Software Programming</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/26000" target="_blank">
+								<span class="course-number">26000</span>
+								<span class="course-name">General Chemistry</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/42101" target="_blank">
+								<span class="course-number">42101</span>
+								<span class="course-name">Introduction to Operations Research</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/42611" target="_blank">
+								<span class="course-number">42611</span>
+								<span class="course-name">Theory of Science in Engineering</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://findit.dtu.dk/en/catalog/62ab0f925993721d0e8a67c3" target="_blank">
+								<span class="course-number">B01</span>
+								<span class="course-name">Bachelor's Project: Circle Packings</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://kurser.dtu.dk/course/01020" target="_blank">
+								<span class="course-number">S01</span>
+								<span class="course-name">Advanced Linear Algebra (Special Course)</span>
+							</a>
+						</li>
+						<li>
+							<span class="course-number">S01</span>
+							<span class="course-name">Physics-Informed Data-Driven Techniques for Parameter Estimation and Discovery of Hidden Physics (Special Course)</span>
+						</li>
+					</ul>
+				</li>
+	
+	
+				<li class="timeline-item">
+					<div class="icon-container" onclick="toggleCourses(this)">
+						<ion-icon name="caret-forward-circle"></ion-icon>
+					</div>
+	
+					<h4 class="h4 timeline-item-title">
+						Technical Gymnasium (HTX)
+					</h4>
+	
+					<span>2015 — 2018</span>
+	
+					<p class="timeline-text">
+					Upper Secondary Technical Education: Mathematics and Physics.
+					</p>
+	
+					<ul class="courses-list">
+						<h5 class="courses-heading">Topics</h5>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
+							<span class="course-name">Mathematics</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
+							<span class="course-name">Physics</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
+							<span class="course-name">Chemistry</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
+							<span class="course-name">Danish</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
+							<span class="course-name">Construction and Energy</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspA</span>
+							<span class="course-name">Studyarea</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspB</span>
+							<span class="course-name">English</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspB</span>
+							<span class="course-name">Technology</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspB</span>
+							<span class="course-name">Information Technology</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspC</span>
+							<span class="course-name">History of Technology</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspC</span>
+							<span class="course-name">Biology</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspC</span>
+							<span class="course-name">Business Economics</span>
+						</li>
+						<li>
+							<span class="course-number">&nbsp&nbsp&nbsp&nbspC</span>
+							<span class="course-name">Social Science</span>
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+	
+		<section class="timeline">
+			<div class="title-wrapper">
+	
+				<div class="icon-box">
+					<ion-icon name="rocket"></ion-icon>
+				</div>
+	
+				<h3 class="h3">Experience</h3>
+			</div>
+	
+			<ol class="timeline-list">
+	
+				<li class="timeline-item" onclick="toggleCourses(this)">
+					<h4 class="h4 timeline-item-title">
+						Technical University of Denmark (DTU)
+					</h4>
+					
+					<span>2024 — Present</span>
+	
+					<p class="timeline-text">
+						Teaching Assistant: Multivariate Statistics, Deep Learning, and Introductory Programming (Python).
+					</p>
+				</li>
+			</ol>
+		</section>
+	</article>
+
+
+	<!--
+		- #PORTFOLIO
+	-->
+	<!-- <article class="portfolio" data-page="portfolio">
+
+		<header>
+			<h2 class="h2 article-title">Portfolio</h2>
+		</header>
+
+		<section class="projects">
+
+			<ul class="filter-list">
+
+				<li class="filter-item">
+					<button class="active" data-filter-btn>All</button>
+				</li>
+
+				<li class="filter-item">
+					<button data-filter-btn>Web design</button>
+				</li>
+
+				<li class="filter-item">
+					<button data-filter-btn>Applications</button>
+				</li>
+
+				<li class="filter-item">
+					<button data-filter-btn>Web development</button>
+				</li>
+
+			</ul>
+
+			<div class="filter-select-box">
+
+				<button class="filter-select" data-select>
+
+					<div class="select-value" data-selecct-value>Select category</div>
+
+					<div class="select-icon">
+						<ion-icon name="chevron-down"></ion-icon>
+					</div>
+
+				</button>
+
+				<ul class="select-list">
+
+					<li class="select-item">
+						<button data-select-item>All</button>
+					</li>
+
+					<li class="select-item">
+						<button data-select-item>Web design</button>
+					</li>
+
+					<li class="select-item">
+						<button data-select-item>Applications</button>
+					</li>
+
+					<li class="select-item">
+						<button data-select-item>Web development</button>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<ul class="project-list">
+
+				<li class="project-item  active" data-filter-item data-category="web development">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+						</figure>
+
+						<h3 class="project-title">Finance</h3>
+
+						<p class="project-category">Web development</p>
+
+					</a>
+				</li>
+
+				<li class="project-item  active" data-filter-item data-category="web development">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+						</figure>
+
+						<h3 class="project-title">Orizon</h3>
+
+						<p class="project-category">Web development</p>
+
+					</a>
+				</li>
+
+				<li class="project-item  active" data-filter-item data-category="web design">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+						</figure>
+
+						<h3 class="project-title">Fundo</h3>
+
+						<p class="project-category">Web design</p>
+
+					</a>
+				</li>
+
+				<li class="project-item  active" data-filter-item data-category="applications">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+						</figure>
+
+						<h3 class="project-title">Brawlhalla</h3>
+
+						<p class="project-category">Applications</p>
+
+					</a>
+				</li>
+
+				<li class="project-item  active" data-filter-item data-category="web design">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+						</figure>
+
+						<h3 class="project-title">DSM.</h3>
+
+						<p class="project-category">Web design</p>
+
+					</a>
+				</li>
+
+				<li class="project-item  active" data-filter-item data-category="web design">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+						</figure>
+
+						<h3 class="project-title">MetaSpark</h3>
+
+						<p class="project-category">Web design</p>
+
+					</a>
+				</li>
+
+				<li class="project-item  active" data-filter-item data-category="web development">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+						</figure>
+
+						<h3 class="project-title">Summary</h3>
+
+						<p class="project-category">Web development</p>
+
+					</a>
+				</li>
+
+				<li class="project-item  active" data-filter-item data-category="applications">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+						</figure>
+
+						<h3 class="project-title">Task Manager</h3>
+
+						<p class="project-category">Applications</p>
+
+					</a>
+				</li>
+
+				<li class="project-item  active" data-filter-item data-category="web development">
+					<a href="#">
+
+						<figure class="project-img">
+							<div class="project-item-icon-box">
+								<ion-icon name="eye-outline"></ion-icon>
+							</div>
+
+							<img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+						</figure>
+
+						<h3 class="project-title">Arrival</h3>
+
+						<p class="project-category">Web development</p>
+
+					</a>
+				</li>
+
+			</ul>
+
+		</section>
+
+	</article> -->
+
+	<!--
+		- #CONTACT
+	-->
+
+	<!-- <article class="contact" data-page="contact">
+
+		<header>
+			<h2 class="h2 article-title">Contact</h2>
+		</header>
+
+		<section class="mapbox" data-mapbox>
+			<figure>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35899.80416414079!2d12.467445979266108!3d55.780426262045545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46524e0cd2198e09%3A0xca6a70136052238a!2s2800%20Kongens%20Lyngby!5e0!3m2!1sda!2sdk!4v1730241106122!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</figure>
+		</section>
+
+		<section class="contact-form">
+
+			<h3 class="h3 form-title">Get in touch via online platforms</h3>
+
+			<form action="#" class="form" data-form>
+
+				<div class="input-wrapper">
+					<input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+					<input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+				</div>
+
+				<textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+				<button class="form-btn" type="submit" disabled data-form-btn>
+					<ion-icon name="paper-plane"></ion-icon>
+					<span>Send Message</span>
+				</button>
+
+			</form>
+			
+
+		</section>
+
+	</article> -->
+
+</div>
+
+</main>
+
+
+<!--
+	- custom js link
+-->
+<script src="./assets/js/script.js"></script>
+
+<!--
+	- ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
