@@ -614,16 +614,16 @@ header ul li a.active{
         max-width: 200px;
         aspect-ratio: 1/1;
     }
-    .user-profile-text h1,
-    .profile-social-container a{
+    .user-profile-text h1{
         font-size: 2.5rem;
     }
     .profile-social-container{
-        grid-gap: 40px;
+        margin-top: -10px;
+        grid-gap: 30px;
     }
     .profile-social-container a{
         margin-top: 0px;
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
     .user-profile-text{
         row-gap: 20px;
