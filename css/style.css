@@ -54,7 +54,7 @@ body{
     margin: 50px auto;
     display: grid;
     grid-template-columns: 425px 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
     align-items: flex-start;
 }
 .menu-profile{
@@ -70,7 +70,6 @@ body{
 }
 header, header ul{
     width: 100%;
-    display: flex;
     flex-direction: column;
 }
 header ul{
@@ -173,14 +172,15 @@ header ul li a.active{
     flex-direction: column;
     padding: 40px;
     width: 100%;
+    row-gap: 20px;
 }
 .user-profile-img{
     width: 100%;
     height: 280px;
     display: flex;
     border-radius: 30px;
-    background-color: var(--text-color);
     overflow: hidden;
+    aspect-ratio: 1/1;
 }
 .user-profile-img img{
     width: 100%;
@@ -193,7 +193,7 @@ header ul li a.active{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    grid-gap: 20px;
 }
 .user-profile-text span{
     color: var(--primary-color);
@@ -205,25 +205,19 @@ header ul li a.active{
     color: var(--text-color);
     font-size: 2rem;
     font-weight: 600;
-    margin: 5px 0px;
 }
 .profile-social-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 .profile-social-container a{
-    width: 48px;
-    height: 48px;
-    /* border-radius: 50%;
-    border: 1px solid var(--border-color); */
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--social-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
     color: var(--text-color);
     transition: all ease 0.3s;
 }
@@ -233,9 +227,9 @@ header ul li a.active{
 }
 .user-profile-btn{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 70px;
-    border-top: 1px solid var(--border-color);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
     width: 100%;
 }
 .user-profile-btn a{
@@ -245,16 +239,18 @@ header ul li a.active{
     color: var(--text-color);
     letter-spacing: 0.5px;
     font-weight: 500;
+    font-size: 1.2rem;
     transition: all ease 0.3s;
-}
-.user-profile-btn a:first-child{
-    border-right: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    border-radius: 40px;
+    width: 100%;
+    height: 50px;
 }
 
 /* Content */
 .section-container{
     background: linear-gradient(120deg, var(--gradient-start), var(--gradient-end)) !important;
-    padding: 45px 50px;
+    padding: 25px 50px 50px 50px;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
@@ -270,12 +266,12 @@ header ul li a.active{
 
 /* About */
 #about{
-    padding: 85px 50px;
+    padding: 50px;
 }
 #about h3{
     color: var(--text-color);
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 #about h3 span{
     color: var(--primary-color);
@@ -293,7 +289,6 @@ header ul li a.active{
     font-size: 3rem;
     margin: 10px 0px;
     font-weight: 500;
-    max-width: 700px;
 }
 #about h1 span{
     background-color: var(--primary-color);
@@ -313,6 +308,7 @@ header ul li a.active{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
     margin-top: 30px;
+    justify-items: center;
 }
 .project-container-box{
     display: flex;
@@ -333,9 +329,9 @@ header ul li a.active{
     
 /* Skills */
 .section-heading{
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    position: relative;
 }
 .section-heading span{
     color: var(--text-color);
@@ -345,6 +341,10 @@ header ul li a.active{
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: absolute;
+    right: -30px;
+    top: -5px;
+    align-self: flex-end;
 }
 .section-heading h3{
     color: var(--text-color);
@@ -355,13 +355,13 @@ header ul li a.active{
 .skill-box-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
     margin-top: 10px;
     width: 100%;
 }
 .skill-box{
     border: 1px solid var(--border-color);
-    padding: 30px;
+    padding: 15px;
     border-radius: 20px;
     position: relative;
 }
@@ -384,7 +384,7 @@ header ul li a.active{
     position: absolute;
     right: 10px;
     top: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
     border: 1px solid var(--border-color);
     color: var(--text-color);
     font-size: 0.8rem;
@@ -398,7 +398,7 @@ header ul li a.active{
     background-color: var(--border-color);
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 .skill-box-bar span{
     background-color: var(--text-color);
@@ -424,7 +424,6 @@ header ul li a.active{
     backdrop-filter: blur(15px);
     background-color: var(--bg-color);
     position: relative;
-    border: 1px solid var(--border-color);
 }
 .edu-work-box, .edu-work-year{
     color: var(--primary-color);
@@ -446,6 +445,24 @@ header ul li a.active{
     margin-top: 10px;
 }
 
+
+/* Publications */
+.pub-link{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 20px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    transition: all ease 0.3s;
+}
+.pub-link:hover{
+    color: var(--primary-color);
+}
+
+
 /* Contact */
 .contact-box-container{
     display: grid;
@@ -456,10 +473,13 @@ header ul li a.active{
 .contact-box{
     border-radius: 20px;
     padding: 25px;
-    border: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--bg-color);
+}
+.contact-box:last-child{
+    border-radius: 20px 20px 0px 0px;
 }
 .contact-box-icon{
     display: flex;
@@ -477,20 +497,23 @@ header ul li a.active{
     font-weight: 500;
     font-size: 1.2rem;
 }
-.contact-box span
-.contact-box span a{
+.contact-box a{
     color: var(--text-color);
     font-size: 1.2rem;
+    /* text-transform: uppercase; */
+}
+.contact-box span{
+    color: var(--text-color);
+    font-size: 1rem;
     /* text-transform: uppercase; */
 }
 .contact-map{
     width: 100%;
     height: 400px;
-    border-radius: 20px;
+    border-radius: 0px 0px 20px 20px;
     overflow: hidden;
     background-color: var(--bg-color);
-    margin-top: 10px;
-    filter: grayscale(0.8) invert(1.0);
+    filter: grayscale(1) invert(1) contrast(1.2);
 }
 .contact-map iframe{
     width: 100%;
@@ -498,53 +521,138 @@ header ul li a.active{
     object-fit: cover;
     object-position: center;
 }
+@media(max-width: 1270px){
+    .skill-box-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 1150px){
+    #about h3{
+        font-size: 1.7rem;
+    }
+
+    header ul li a::after{
+        content: attr(data-label);
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        transform: translateX(-100%) translateY(8px);
+        white-space: nowrap;
+        background-color: var(--primary-color);
+        color: var(--bg-color);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    header ul li a::before{
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg) translateX(1px);
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 5px 5px 5px 0px;
+        border-color: transparent var(--primary-color) transparent transparent;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
 
 
-/* Different screen sizes */
-@media (max-width: 1200px){
     .main-container{
         grid-template-columns: 1fr;
+        grid-gap: 10px;
     }
     .menu-profile{
         position: static;
-    }
-    .user-profile-img{
-        min-height: 500px;
-    }
-    .menu-profile{
         grid-template-columns: 1fr;
+        row-gap: 10px;
     }
-    nav{
+    .menu-profile nav{
         display: grid;
-        grid-template-columns: 60px 1fr;
+        grid-template-columns: 100px auto;
         grid-gap: 10px;
-        align-items: baseline;
-        position: sticky;
+        height: 100px;
+        border-radius: 50px;
+        justify-content: center;
     }
-    nav ul{
+    header ul{
+        width: max-content;
+        padding: 10px;
+    }
+    header ul li a{
+        height: 80px;
+        width: 80px;
+        aspect-ratio: 1/1;
+    }
+    header ul li i{
+        font-size: 2rem;
+    }
+    .dark-light-btn{
+        height: 100%;
+        width: 100%;
+        font-size: 3rem;
+    }
+    .menu-profile ul{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        overflow-x: auto;
-        padding: 5px;
+        height: 100%;
     }
-    /* .skill-box-container{
+    .user-profile-container{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 40px;
+    }
+    .user-profile-img{
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
+        aspect-ratio: 1/1;
+    }
+    .user-profile-text h1,
+    .profile-social-container a{
+        font-size: 2.5rem;
+    }
+    .profile-social-container{
+        grid-gap: 40px;
+    }
+    .profile-social-container a{
+        margin-top: 0px;
+        font-size: 2rem;
+    }
+    .user-profile-text{
+        row-gap: 20px;
+        width: 100%;
+        min-width: 300px;
+    }
+    .user-profile-btn{
+        display: grid;
         grid-template-columns: 1fr 1fr;
-    } */
-}
-
-@media (max-width: 500px){
+        grid-gap: 20px;
+        justify-items: center;
+    }
+    .user-profile-btn a{
+        border-radius: 40px;
+        width: 100%;
+        height: 60px;
+        font-size: 1.2rem;
+    }
     .skill-box-container{
-        grid-template-columns: 1fr;
-        row-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .skill-box-bar{
-        left: 40px;
-        top: -20px;
-        width: calc(100% - 40px);
+}
+@media(max-width: 1000px){
+    .skill-box-container{
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    .skill-box{
-        padding: 15px 15px 0px 15px;
+}
+@media(max-width: 500px){
+    .skill-box-container{
+        grid-template-columns: 1fr 1fr;
     }
-
 }

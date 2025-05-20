@@ -46,9 +46,19 @@
                                 <i class="fa-solid fa-layer-group"></i>
                             </a></li>
 
-                            <!-- Resume -->
-                            <li><a href="#edu-work" data-label="Resume">
-                                <i class="fa-solid fa-file-lines"></i>
+                            <!-- Education -->
+                            <li><a href="#edu" data-label="Education">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </a></li>
+
+                            <!-- Work -->
+                            <li><a href="#work" data-label="Work">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </a></li>
+
+                            <!-- Publications -->
+                            <li><a href="#publications" data-label="Publications">
+                                <i class="fa-solid fa-upload"></i>
                             </a></li>
 
                             <!-- Contact -->
@@ -81,13 +91,12 @@
                                     <a href="https://github.com/MEGAjosni" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                                     <a href="https://orcid.org/my-orcid?orcid=0009-0000-6295-6428" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i></a>
                                 </div>
+                                <!-- INSIDE user-profile-text (for mobile) -->
+                                <div class="user-profile-btn">
+                                    <a href="files/JonasCV.pdf" download target="_blank">Download CV</a>
+                                    <a href="#contact">Contact Me</a>
+                                </div>
                             </div>                           
-                        </div>
-
-                        <!-- Buttons -->
-                        <div class="user-profile-btn">
-                            <a href="cv/cv.pdf" download target="_blank">Download CV</a>
-                            <a href="#contact">Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -102,23 +111,23 @@
                 <!-- About -->
                 <section id="about" class="section-container">
                     <h3>Hello, I'm a <span id="role">Math Engineer</span></h3>
-                    <h1><span>Engineer</span> in applied Math and Data Science</h1>
-                    <p>I'm a passionate engineer with a strong foundation in mathematical modelling and computation. I thrive on solving complex problems and am always eager to learn new technologies and methodologies.</p>
+                    <h1><span>Engineer</span> in applied Mathematics and Data Science</h1>
+                    <p>I have a strong passion for applying mathematical and data-driven methods to understand and solve complex real-world problems. Through my education, specialized courses, and projects, I have gained solid experience in machine learning, deep learning (AI), simulation, scientific computing, and optimization. I work in a structured, analytical, and goal-oriented way to develop robust solutions, and thrive with challenges that both test my skills and provide opportunities for professional development.</p>
                     <!-- <h1><span>Engineer</span> in Mathematical Modelling and Computation</h1> -->
                 
                     <!-- Key numbers -->
                     <div class="project-container-about">
                         <div class="project-container-box">
-                            <span>0</span>
-                            <strong>Years of Experience</strong>
+                            <span id="age"></span>
+                            <strong>Years<br>of Age</strong>
+                        </div>
+                        <div class="project-container-box">
+                            <span>3</span>
+                            <strong>Published<br>Works</strong>
                         </div>
                         <div class="project-container-box">
                             <span>0</span>
-                            <strong>Completed Projects</strong>
-                        </div>
-                        <div class="project-container-box">
-                            <span>1</span>
-                            <strong>Publications</strong>
+                            <strong>Consumed<br>Coffee Cups</strong>
                         </div>
                     </div>
                 </section>
@@ -127,8 +136,8 @@
                 <section id="skills" class="section-container">
                     <!-- Heading -->
                     <div class="section-heading">
-                        <span><i class="fa-solid fa-layer-group"></i> Technical Skills</span>
                         <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                        <span><i class="fa-solid fa-layer-group"></i> Technical Skills</span>
                     </div>
 
                     <!-- Skills List -->
@@ -257,8 +266,8 @@
 
                 </section>
 
-                <!-- Work & Education -->
-                <section id="edu-work" class="section-container">
+                <!-- Education -->
+                <section id="edu" class="section-container">
 
                     <div class="section-heading">
                         <span><i class="fa-solid fa-file-lines"></i> Resume</span>
@@ -296,6 +305,15 @@
                         </div>
 
                     </div>
+                
+                </section>
+
+                <!-- Work -->
+                <section id="work" class="section-container">
+
+                    <div class="section-heading">
+                        <span><i class="fa-solid fa-file-lines"></i> Resume</span>
+                    </div>
 
                     <!-- Work -->
                     <div class="section-heading" style="margin-top: 1rem;">
@@ -325,6 +343,44 @@
 
                 </section>
                 
+                <!-- Publications -->
+                <section id="publications" class="section-container">
+
+                    <div class="section-heading">
+                        <h3><i class="fa-solid fa-upload"></i> Publications</h3>
+                    </div>
+
+                    <div class="edu-work-box-container">
+                        
+                        <!-- PIR -->
+                        <div class="edu-work-box">
+                            <span class="edu-work-year">June 2025</span>
+                            <strong>Physics-Informed Regression: Parameter Estimation in Nonlinear Models</strong>
+                            <span class="edu-work-location">Jonas S. Nielsen, Marcus G. Jacobsen, Albert B. Olson, Mads P. Sørensen, Allan P. Engsig-Karup</span>
+                            <a class="pub-link bg-gradient">Soon</a>
+                        </div>
+
+                        <!-- Master Thesis -->
+                        <div class="edu-work-box">
+                            <span class="edu-work-year">March 2025</span>
+                            <strong>Universal Physics-Informed Neural Networks for Hidden Discovery</strong>
+                            <span class="edu-work-location">Master Thesis: Jonas S. Nielsen</span>
+                            <a class="pub-link bg-gradient" href="files/jonas_master_thesis.pdf" target="_blank">Read</a>
+                        </div>
+
+                        <!-- Bachelors Project -->
+                        <div class="edu-work-box">
+                            <span class="edu-work-year">May 2022</span>
+                            <strong>Geodesic Circle Packing on 2D Surfaces</strong>
+                            <span class="edu-work-location">Bachelors Project: Jonas S. Nielsen</span>
+                            <a class="pub-link bg-gradient" href="files/jonas_bachelors_project.pdf" target="_blank">Read</a>
+                        </div>
+
+                    </div>
+                
+                </section>
+
+
                 <!-- Contact -->
                 <section id="contact" class="section-container">
 
@@ -336,33 +392,31 @@
 
                     <div class="contact-box-container">
                         <!-- Phone -->
-                        <div class="contact-box bg-gradient">
+                        <div class="contact-box">
                             <div class="contact-box-icon">
                                 <i class="fa-solid fa-phone"></i>
                                 <strong>Phone</strong>
                             </div>
-                            <span>+45 24 64 98 84</span>
+                            <a href="tel:+4524649884">+45 24 64 98 84</a>
                         </div>
 
                         <!-- Email -->
-                        <div class="contact-box bg-gradient">
+                        <div class="contact-box">
                             <div class="contact-box-icon">
                                 <i class="fa-solid fa-envelope"></i>
                                 <strong>Email</strong>
                             </div>
-                            <span>jonassoeborgnielsen@icloud.com</span>
+                            <a href="mailto:jonassoeborgnielsen@icloud.com">jonassoeborgnielsen@icloud.com</span>
                         </div>
 
                         <!-- Location -->
-                        <div class="contact-box bg-gradient">
+                        <div class="contact-box">
                             <div class="contact-box-icon">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <strong>Location</strong>
                             </div>
                             <span>Kongens Lyngby, Copenhagen, Denmark</span>
                         </div>
-
-
 
                     </div>
                     
@@ -464,6 +518,27 @@
 
             });
 
+            // Set your birthdate here:
+            const birthDate = new Date('1999-02-18'); // YYYY-MM-DD format
+
+            function calculateAge(birthDate) {
+                const today = new Date();
+                let age = today.getFullYear() - birthDate.getFullYear();
+                const m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+                // Check if the age is NaN
+                if (isNaN(age) || age < 0) {
+                    return "Many";
+                } else if (age > 99) {
+                    return "100+";
+                } else {
+                    return age;
+                }
+            }
+
+            document.getElementById('age').textContent = calculateAge(birthDate);
 
 
         </script>
