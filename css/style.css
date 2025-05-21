@@ -700,7 +700,8 @@ header ul li a.active{
         font-weight: 500;
     }
     .edu-work-location,
-    .edu-work-box p{
+    .edu-work-box p,
+    #about p{
         font-size: 1.2rem;
     }
 
@@ -712,6 +713,7 @@ header ul li a.active{
     .section-heading h3{
         font-size: 3rem;
     }
+    
 
     .skill-box-content span{
         font-size: 1.6rem;
@@ -719,8 +721,4 @@ header ul li a.active{
     .skill-box-percentage{
         font-size: 1.2rem;
     }
-    /* .skill-box-bar span,
-    .skill-box-bar{
-        height: 8px;
-    } */
 }
