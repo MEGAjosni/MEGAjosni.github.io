@@ -401,7 +401,7 @@ header ul li a.active{
 .skill-box-bar{
     position: relative;
     width: 100%;
-    height: 5px;
+    height: 7px;
     background-color: var(--border-color);
     border-radius: 10px;
     overflow: hidden;
@@ -680,10 +680,47 @@ header ul li a.active{
         visibility: hidden;
     }
     .contact-box-icon i{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .contact-box{
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
     }
+    .contact-box span,
+    .contact-box a{
+        font-size: 1.8rem;
+    }
+    .edu-work-box, .edu-work-year{
+    font-size: 1.25rem;
+    }
+    .edu-work-box strong{
+        color: var(--text-color);
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .edu-work-location,
+    .edu-work-box p{
+        font-size: 1.2rem;
+    }
+
+    /* Publications */
+    .pub-link{
+        font-size: 1.6rem;
+    }
+
+    .section-heading h3{
+        font-size: 3rem;
+    }
+
+    .skill-box-content span{
+        font-size: 1.6rem;
+    }
+    .skill-box-percentage{
+        font-size: 1.2rem;
+    }
+    /* .skill-box-bar span,
+    .skill-box-bar{
+        height: 8px;
+    } */
 }
