@@ -559,11 +559,16 @@ header ul li a.active{
         display: grid;
         grid-template-columns: auto 1fr;
         z-index: 1000;
-        border: 2px solid var(--body-bg-color)
+        border-radius: 0px;
+        background-color: var(--body-bg-color);
     }
     .profile-img{
         height: 220px;
         padding: 0px;
+        border-radius: 0px;
+    }
+    .profile-img img{
+        border-radius: 0px;
     }
     .profile-text h1{
         font-size: 2.5rem;
@@ -590,6 +595,7 @@ header ul li a.active{
         position: fixed;
         bottom: 0px;
         background-color: var(--body-bg-color);
+        align-content: center;
     }
     header nav ul{
         display: flex;
@@ -609,7 +615,10 @@ header ul li a.active{
     .section-container:last-child{
         margin-bottom: 80px;
     }
-
+    header nav ul li a:hover::before,
+    header nav ul li a:hover::after{
+        opacity: 0;
+    }
 
 
     #about h3{
