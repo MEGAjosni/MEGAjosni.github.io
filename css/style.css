@@ -277,6 +277,7 @@ header ul li a.active{
 
 /* About */
 #about{
+    margin-top: 10px;
     padding: 50px;
 }
 #about h3{
@@ -365,7 +366,6 @@ header ul li a.active{
     color: var(--text-color);
     font-size: 2rem;
     font-weight: 500;
-    justify-items: center;
 }
 .section-heading h3 i {
     color: var(--body-bg-color);
