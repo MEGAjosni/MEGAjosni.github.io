@@ -27,10 +27,11 @@ ul{
     --social-color: #ffffff;
 }
 :root.light-mode{
-    --primary-color: #30d15b;
+    --primary-color: hsl(136, 64%, 40%);
     --link-color: #0a84ff;
     --text-color: #222222;
     --bg-color: #ffffff;
+    --pane-bg-color: #e8e8e8;
     --body-bg-color: #ffffff;
     --border-color: #bbbbbb;
     --gradient-start: #dfdfdf;
