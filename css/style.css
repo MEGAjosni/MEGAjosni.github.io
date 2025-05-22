@@ -64,6 +64,7 @@ body{
     flex-direction: row;
 }
 .menu{
+    margin-top: 10px;
     top: 10px;
     position: sticky;
 }
