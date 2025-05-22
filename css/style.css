@@ -555,7 +555,7 @@ header ul li a.active{
     .profile-container{
         top: 0px;
         opacity: 1;
-        padding: 0px;
+        padding: 10px 0px 15px 0px;
         width: 100%;
         display: grid;
         grid-template-columns: auto 1fr;
@@ -566,10 +566,13 @@ header ul li a.active{
     .profile-img{
         height: 220px;
         padding: 0px;
-        border-radius: 0px;
+        border-radius: 20px;
     }
     .profile-img img{
         border-radius: 0px;
+    }
+    .profile-text{
+        gap: 20px;
     }
     .profile-text h1{
         font-size: 2.5rem;
