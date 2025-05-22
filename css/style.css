@@ -28,7 +28,7 @@ ul{
 }
 :root.light-mode{
     --primary-color: hsl(136, 64%, 40%);
-    --link-color: #0a84ff;
+    --link-color: hsl(210, 100%, 40%);
     --text-color: #222222;
     --bg-color: #ffffff;
     --pane-bg-color: #e8e8e8;
@@ -58,17 +58,14 @@ body{
     width: 90%;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: 425px 1fr;
+    grid-template-columns: 1fr auto 70px;
     grid-gap: 10px;
-    align-items: flex-start;
+    align-items: start;
+    flex-direction: row;
 }
-.menu-profile{
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 65px 1fr;
-    grid-gap: 10px;
-    position: sticky;
+.menu{
     top: 10px;
+    position: sticky;
 }
 .header{
     position: relative;
@@ -84,32 +81,34 @@ header ul{
     padding: 10px 5px;
     border-radius: 50px;
     display: grid;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
     justify-content: center;
+}
+header ul{
+    background-color: var(--pane-bg-color);
 }
 header ul li a{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    font-family: 1.03rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     position: relative;
     transition: all ease 0.3s;
     z-index: 99;
 }
 header ul li i{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     
 }
 header ul li a::after{
     content: attr(data-label);
     position: absolute;
     top: 50%;
-    left: 120%;
+    right: 120%;
     transform: translateY(-50%);
     white-space: nowrap;
     background-color: var(--primary-color);
@@ -126,8 +125,8 @@ header ul li a::before{
     content: '';
     position: absolute;
     top: 50%;
-    left: 110%;
-    transform: translateY(-50%);
+    right: 110%;
+    transform: translateY(-50%) rotate(180deg);
     width: 0px;
     height: 0px;
     border-style: solid;
@@ -143,10 +142,10 @@ header nav ul li a:hover::after{
     visibility: visible;
 }
 .dark-light-btn{
-    width: 65px;
-    height: 65px;
+    width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -164,63 +163,50 @@ header ul li a.active{
     color: var(--primary-color);
 }
 
-/* Profile */
+/* --------------- Profile --------------- */
 .profile-container{
-    height: 100%;
-    position: relative;
-}
-.user-profile{
+    margin-top: 10px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     border-radius: 20px;
-}
-.user-profile-container{
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
+    padding: 20px;
+    background-color: var(--pane-bg-color);
     width: 100%;
-    row-gap: 20px;
+    row-gap: 10px;
+    align-self: start;
+    top: 10px;
+    position: sticky;
 }
-.user-profile-img{
+.profile-img{
     width: 100%;
     height: 270px;
+    padding: 10px 0px 10px 10px;
     display: flex;
-    border-radius: 10px;
     overflow: hidden;
     aspect-ratio: 1/1;
 }
-.user-profile-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.profile-img img{
+    border-radius: 10px;
 }
-.user-profile-text{
+.profile-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
-.user-profile-text span{
-    color: var(--primary-color);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 0.9rem;
-}
-.user-profile-text h1{
+.profile-text h1{
     color: var(--text-color);
     font-size: 2rem;
     font-weight: 600;
 }
-.profile-social-container{
+.social-container{
     display: flex;
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
 }
-.profile-social-container a{
+.social-container a{
     font-size: 2rem;
     color: var(--social-color);
     display: flex;
@@ -229,44 +215,40 @@ header ul li a.active{
     color: var(--text-color);
     transition: all ease 0.3s;
 }
-.profile-social-container a:hover,
-.user-profile-btn a:hover{
-    color: var(--primary-color);
+.social-container a:hover,
+.profile-btn a:hover{
+    color: var(--text-color);
 }
-.user-profile-btn{
+.profile-btn{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     width: 100%;
 }
-.user-profile-btn a{
+.profile-btn a{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-color);
+    color: var(--link-color);
     letter-spacing: 0.5px;
     font-weight: 500;
     font-size: 1.2rem;
     transition: all ease 0.3s;
-    background-color: var(--bg-color);
-    border-radius: 40px;
     width: 100%;
     height: 50px;
 }
 
+
+
+
+
 /* Content */
 .section-container{
-    /* background: linear-gradient(120deg, var(--gradient-start), var(--gradient-end)) !important; */
-    /* padding: 25px 50px 50px 50px; */
     background-color: var(--pane-bg-color);
     display: flex;
     flex-direction: column;
-    /* border-radius: 0px 0px 20px 20px; */
     border-radius: 20px;
     margin-bottom: 10px;
-    /* border: 1px solid var(--bg-color); */
-    /* border-top: none; */
 }
 .all-content{
     display: flex;
@@ -568,24 +550,66 @@ header ul li a.active{
 }
 @media(max-width: 1150px){
 
-    /* Profile
-    .user-profile-container{
-        padding: .0vw;
-        height: 15vw;
+    /* Profile */    
+    .profile-container{
+        top: 0px;
+        opacity: 1;
+        padding: 0px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        z-index: 1000;
+        border: 2px solid var(--body-bg-color)
     }
-    .user-profile-img{
-        border-radius: 25px 0px 0px 25px;
-        height: 15vw;
-        width: 15vw;
-        aspect-ratio: 1/1;
-    } */
+    .profile-img{
+        height: 220px;
+        padding: 0px;
+    }
+    .profile-text h1{
+        font-size: 2.5rem;
+    }
+    .profile-btn{
+        padding: 0px 20px 0px 20px;
+    }
+    .social-container a{
+        margin-top: 0px;
+        font-size: 2.8rem;
+    }
+    .profile-btn a{
+        font-size: 1.6rem;;
+    }
 
-    .user-profile-img{
-        height: 200px;
+
+    /* Navigation */
+    header nav{
+        display: grid;
+        grid-template-columns: 100px auto;
+        gap: 10px;
+        height: 120px;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        background-color: var(--body-bg-color);
     }
-    .user-profile-container{
-        padding: 20px;
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        border-radius: 100px;
+        margin: 0px;
+        background: none;
+        align-content: center;
     }
+    .dark-light-btn{
+        background: none;
+        font-size: 2rem;
+        border-radius: 0px;
+        border-right: 1px solid var(--border-color);
+        place-content: center;
+    }
+    .section-container:last-child{
+        margin-bottom: 80px;
+    }
+
 
 
     #about h3{
@@ -627,19 +651,6 @@ header ul li a.active{
     .main-container{
         grid-template-columns: 1fr;
     }
-    .menu-profile{
-        position: static;
-        grid-template-columns: 1fr;
-        row-gap: 10px;
-    }
-    .menu-profile nav{
-        display: grid;
-        grid-template-columns: 100px auto;
-        grid-gap: 10px;
-        height: 100px;
-        border-radius: 50px;
-        justify-content: center;
-    }
     header ul{
         width: max-content;
         padding: 10px;
@@ -651,49 +662,6 @@ header ul li a.active{
     }
     header ul li i{
         font-size: 2rem;
-    }
-    .dark-light-btn{
-        height: 100%;
-        width: 100%;
-        font-size: 3rem;
-    }
-    .menu-profile ul{
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-    }
-    .user-profile-container{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-gap: 40px;
-    }
-    .user-profile-text h1{
-        font-size: 2.5rem;
-    }
-    .profile-social-container{
-        margin-top: -10px;
-        grid-gap: 30px;
-    }
-    .profile-social-container a{
-        margin-top: 0px;
-        font-size: 2.8rem;
-    }
-    .user-profile-text{
-        row-gap: 20px;
-        width: 100%;
-        min-width: 300px;
-    }
-    .user-profile-btn{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        justify-items: center;
-    }
-    .user-profile-btn a{
-        border-radius: 40px;
-        width: 100%;
-        height: 60px;
-        font-size: 1.4rem;
     }
     .skill-box-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
