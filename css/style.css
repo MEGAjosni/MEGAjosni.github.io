@@ -17,7 +17,7 @@ ul{
     --link-color: #0a84ff;
     --text-color: #ffffff;
     --bg-color: #1c1c1e;
-    --pane-bg-color: #1f1f1f;
+    --pane-bg-color: #000000aa;
     --body-bg-color: #000000;
     --border-color: #3d3d3d;
     --gradient-start: #1a1a1a;
@@ -31,7 +31,7 @@ ul{
     --link-color: hsl(210, 100%, 40%);
     --text-color: #222222;
     --bg-color: #ffffff;
-    --pane-bg-color: #e8e8e8;
+    --pane-bg-color: #ffffff99;
     --body-bg-color: #ffffff;
     --border-color: #bbbbbb;
     --gradient-start: #dfdfdf;
@@ -43,9 +43,13 @@ ul{
 /* Body */
 body{
     color: var(--text-color);
-    background-color: var(--body-bg-color);
-    /* background-image: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important;
-    background-attachment: fixed; */
+    background-image: url('../images/dark_mountain.png');
+    /* background-color: var(--body-bg-color); */
+    /* background-image: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important; */
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
 }
 .bg-gradient{
     /* background-image: linear-gradient(120deg, var(--gradient-start), var(--gradient-end)) !important; */
@@ -84,6 +88,7 @@ header ul{
     display: grid;
     /* grid-gap: 10px; */
     justify-content: center;
+    backdrop-filter: blur(5px);
 }
 header ul{
     background-color: var(--pane-bg-color);
@@ -157,6 +162,7 @@ header nav ul li a:hover::after{
     background: var(--pane-bg-color);
     cursor: pointer;
     transition: all ease 0.3s;
+    backdrop-filter: blur(5px);
 }
 .dark-light-btn:hover,
 header ul li a:hover,
@@ -169,7 +175,7 @@ header ul li a.active{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 20px;
     background-color: var(--pane-bg-color);
     width: 100%;
@@ -177,6 +183,7 @@ header ul li a.active{
     align-self: start;
     top: 10px;
     position: sticky;
+    backdrop-filter: blur(5px);
 }
 .profile-img{
     width: 100%;
@@ -218,7 +225,8 @@ header ul li a.active{
 }
 .social-container a:hover,
 .profile-btn a:hover{
-    color: var(--text-color);
+    /* color: var(--text-color); */
+    filter: brightness(0) invert(1);
 }
 .profile-btn{
     display: grid;
@@ -248,8 +256,10 @@ header ul li a.active{
     background-color: var(--pane-bg-color);
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 25px;
     margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+    filter: url(#glass-distortion);
 }
 .all-content{
     display: flex;
@@ -331,7 +341,7 @@ header ul li a.active{
     /* margin-left: 20px;
     margin-top: 10px; */
     padding: 10px 20px;
-    border-radius: 20px 20px 0px 0px;
+    /* border-radius: 20px 20px 0px 0px; */
 }
 .section-heading span{
     color: var(--text-color);
@@ -352,9 +362,9 @@ header ul li a.active{
     font-weight: 500;
 }
 .section-heading h3 i {
-    color: var(--body-bg-color);
-    background-color: var(--primary-color);
-    border-radius: 50%;
+    color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    /* border-radius: 50%; */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -388,6 +398,9 @@ header ul li a.active{
 .skill-box-content span{
     color: var(--text-color);
     font-weight: 500;
+}
+.skill-box-content img{
+    height: 30px;
 }
 .skill-box-percentage{
     position: absolute;
@@ -434,7 +447,6 @@ header ul li a.active{
     /* border-radius: 20px; */
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(15px);
     /* background-color: var(--bg-color); */
     background-color: transparent;
     position: relative;
@@ -463,6 +475,18 @@ header ul li a.active{
     color: var(--text-color);
     font-size: 0.9rem;
     margin-top: 10px;
+}
+.edu-work-logo{
+    position: absolute;
+    right: 15px;
+    top: 35px;
+}
+.edu-work-logo img{
+    width: 30px;
+    transition: ease 0.3s;
+}
+.edu-work-logo:hover img {
+    filter: brightness(0) invert(1);
 }
 
 
