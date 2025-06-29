@@ -443,7 +443,6 @@ header ul li a.active{
     
 }
 .edu-work-box{
-    padding: 20px;
     /* border-radius: 20px; */
     display: flex;
     flex-direction: column;
@@ -493,7 +492,7 @@ header ul li a.active{
 /* Publications */
 .pub-link{
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 20px;
     border-radius: 20px;
     color: var(--link-color);
