@@ -574,27 +574,37 @@ header ul li a.active{
 }
 @media(max-width: 1150px){
 
+    body{
+        background-image: none;
+        background-color: var(--bg-color);
+    }
+
+    
+
     /* Profile */    
     .profile-container{
-        top: 0px;
-        opacity: 1;
-        padding: 10px 0px 15px 0px;
-        width: 100%;
+        /* background-color:hsla(0, 0%, 0%, 0.171); */
+        top: 10px;
+        padding: 10px;
+        border-radius: 50px;
+        width: 95%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: auto 1fr;
         z-index: 1000;
-        border-radius: 0px;
-        background-color: var(--body-bg-color);
+        /* border-radius: 0px; */
+        /* background-color: var(--body-bg-color); */
     }
     .profile-img{
-        height: 220px;
+        height: 150px;
         padding: 0px;
-        border-radius: 20px;
+        border-radius: 40px;
     }
     .profile-img img{
         border-radius: 0px;
     }
     .profile-text{
+        margin-bottom: 10px;
         gap: 20px;
     }
     .profile-text h1{
@@ -613,31 +623,44 @@ header ul li a.active{
 
 
     /* Navigation */
+    .profile-btn {
+        display: none;
+    }
+    .menu{
+        /* display: fixed; */
+        bottom: 10px;
+        align-items: center;
+        height: 100px;
+        padding: 0px;
+        margin: 0px;
+        top: none;
+        margin: 0 auto;
+    }
+
     header nav{
         display: grid;
         grid-template-columns: 100px auto;
         gap: 10px;
-        height: 120px;
-        width: 100%;
-        position: fixed;
-        bottom: 0px;
-        background-color: var(--body-bg-color);
-        align-content: center;
+        /* height: 100%; */
+        /* width: 80%; */
+        /* position: fixed; */
+        /* bottom: 0px; */
+        /* background-color: var(--body-bg-color); */
     }
+    /* .dark-light-btn{
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 1/1;
+    } */
+
     header nav ul{
         display: flex;
         flex-direction: row;
-        border-radius: 100px;
-        margin: 0px;
-        background: none;
-        align-content: center;
-    }
-    .dark-light-btn{
-        background: none;
-        font-size: 2rem;
-        border-radius: 0px;
-        border-right: 1px solid var(--border-color);
-        place-content: center;
+        /* margin: 10px; */
+        /* background: none; */
+        align-items: center;
+        padding: 10px;
+        height: 100px;
     }
     .section-container:last-child{
         margin-bottom: 80px;
@@ -689,7 +712,7 @@ header ul li a.active{
     }
     header ul{
         width: max-content;
-        padding: 10px;
+        /* padding: 10px; */
     }
     header ul li a{
         height: 80px;
