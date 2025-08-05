@@ -504,6 +504,16 @@ header ul li a.active{
 .pub-link:hover{
     color: var(--text-color);
 }
+.pub-link img{
+    height: 20px;
+    vertical-align: middle;
+    transition: filter ease 0.3s;
+    filter: brightness(0) saturate(100%) invert(45%) sepia(75%) saturate(3827%) hue-rotate(183deg) brightness(104%) contrast(103%); /* This gives issues for animation transition */
+}
+.pub-link:hover img{
+    /* color: var(--text-color); */
+    filter: brightness(0) invert(1);
+}
 
 
 /* Contact */
