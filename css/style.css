@@ -14,11 +14,10 @@ ul{
 /* Root Colors */
 :root{
     --primary-color: #30d15b;
-    --primary-color-transparent: #1f4918;
     --link-color: #0099ff;
     --text-color: #ffffff;
     --bg-color: #1c1c1e;
-    --pane-bg-color: #000000bb;
+    --pane-bg-color: #000000aa;
     --body-bg-color: #000000;
     --border-color: #3d3d3d;
     --gradient-start: #1a1a1a;
@@ -287,23 +286,22 @@ header ul li a.active{
     opacity: 1;
     white-space: nowrap;
     transition: opacity 0.5s ease-out;
-    border-right: 1px solid var(--text-color);
+    border-right: 2px solid var(--text-color);
     display: inline-block;
     padding-right: 5px;
 }
 #about h1{
     color: var(--text-color);
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 10px 0px;
     font-weight: 500;
 }
 #about h1 span{
-    background-color: var(--primary-color-transparent);
-    border: 2px solid var(--primary-color);
-    /* color: var(--bg-color); */
-    padding: 0px 15px;
-    border-radius: 50px;
-    font-size: 2.5rem;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 0px 20px;
+    border-radius: 30px;
+    font-size: 2.6rem;
 }
 #about p{
     color: var(--text-color);
@@ -374,65 +372,17 @@ header ul li a.active{
     width: 40px;
     height: 40px;
 }
-.skill-container{
-    /* border-radius: 20px; */
-    /* display: flex;
-    flex-direction: column; */
-    /* background-color: var(--bg-color); */
-    /* background-color: transparent;
-    position: relative; */
-    border-top: 1px solid var(--border-color);
-    /* padding: 25px 15px; */
-    margin: 0px 20px;
-    padding: 25px 15px;
-}
-.skill-container:first-child{
-    border-top: none;
-}
-
-.certificate-box-container{
-    display: flex;
-    flex-direction: row;
-    grid-gap: 20px;
-    width: 100%;
-    /* padding: 20px 10px; */
-}
-
-.certificate-box a{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-
-.certificate-box a img{
-    height: 100px;
-}
-.certificate-box a strong, .programming-language-box strong{
-    color: var(--text-color);
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 5px;
-}
-.certificate-box a span{
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-    opacity: 0.6;
-}
-
 .skill-box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
     width: 100%;
-    /* padding: 20px 0px; */
+    padding: 20px;
 }
 .skill-box{
     /* border: 1px solid var(--border-color); */
-    /* padding: 5px 10px; */
-    /* border-radius: 10px; */
+    padding: 10px;
+    border-radius: 10px;
     position: relative;
 }
 .skill-box-content{
@@ -465,12 +415,12 @@ header ul li a.active{
 }
 .skill-box-bar{
     position: relative;
-    width: 80px;
+    width: 100%;
     height: 7px;
     background-color: var(--border-color);
     border-radius: 10px;
     overflow: hidden;
-    /* margin-top: 5px; */
+    margin-top: 5px;
 }
 .skill-box-bar span{
     background-color: var(--link-color);
@@ -480,16 +430,6 @@ header ul li a.active{
     top: 0px;
     border-radius: 30px;
 }
-
-.programming-language-box{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-.programming-language-box img{
-    height: 60px;
-}
-
 .edu-work-box-container{
     display: flex;
     flex-direction: column;
@@ -638,9 +578,9 @@ header ul li a.active{
     object-position: center;
 }
 @media(max-width: 1270px){
-    /* .skill-box-container{
+    .skill-box-container{
         grid-template-columns: 1fr 1fr;
-    } */
+    }
 }
 @media(max-width: 1150px){
 
@@ -792,23 +732,23 @@ header ul li a.active{
     header ul li i{
         font-size: 2rem;
     }
-    /* .skill-box-container{
+    .skill-box-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    } */
+    }
 }
 @media(max-width: 1000px){
-    /* .skill-box-container{
+    .skill-box-container{
         grid-template-columns: 1fr 1fr 1fr;
-    } */
+    }
 }
 @media(max-width: 500px){
     body {
         transform: scale(0.9);
         transform-origin: top left;
     }
-    /* .skill-box-container{
+    .skill-box-container{
         grid-template-columns: 1fr 1fr;
-    } */
+    }
     .contact-box-icon strong{
         visibility: hidden;
     }
