@@ -47,29 +47,32 @@ ul{
     .occupation-logo
 ):hover{
     transform: scale(1.15);
+    cursor: pointer;
 }
 :is(
     .social-container a,
     .occupation-logo img
 ):hover {
     filter: brightness(0) invert(1);
+    cursor: pointer;
 }
 
 /* Highlight Animations for Text objects */
 .profile-btn a,
 .nav-menu a,
-.pub-link,
+.pub-links a,
 .contact-box a {
     transition: transform var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 :is(
     .profile-btn a,
     .nav-menu a,
-    .pub-link,
+    .pub-links a,
     .contact-box a
 ):hover{
     transform: scale(1.1);
     color: var(--text-color);
+    cursor: pointer;
 }
 
 
@@ -498,14 +501,26 @@ img.certificate{
 
 
 /* Publications */
-.pub-link{
+.pub-links{
     position: absolute;
     right: 10px;
     top: 20px;
-    border-radius: 20px;
+    height: 20px;
+    display: flex;
+    grid-gap: 15px;
+}
+.pub-links a{
+    position: relative;
     color: var(--link-color);
     font-size: 1rem;
     font-weight: 500;
+    /* justify-content: center;
+    align-items: center; */
+    cursor: pointer;
+}
+.pub-links a svg{
+    height: 100%;
+    fill: var(--link-color);
 }
 
 /* Contact */
