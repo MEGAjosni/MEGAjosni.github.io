@@ -351,7 +351,7 @@ header ul li a.active{
 .section-heading h3{
     color: var(--text-color);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 550;
     position: relative;
     left: -20px;
 }
