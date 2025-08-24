@@ -25,42 +25,37 @@
     </head>
 
     <!-- header -->
-    <div class="menu">
-        <nav>
-            <ul>
-                <!-- About -->
-                <li><a href="#about" data-label="About" class="active">
-                    <i class="fa-solid fa-address-book"></i> About
-                </a></li>
+    <nav class="nav-menu">
+        <!-- About -->
+        <a href="#about" data-label="About" class="active">
+            <i class="fa-solid fa-address-book"></i> About
+        </a>
 
-                <!-- Skill -->
-                <li><a href="#skills" data-label="Technical Skills">
-                    <i class="fa-solid fa-layer-group"></i> Technical Skills
-                </a></li>
+        <!-- Skill -->
+        <a href="#skills" data-label="Technical Skills">
+            <i class="fa-solid fa-layer-group"></i> Technical Skills
+        </a>
 
-                <!-- Work -->
-                <li><a href="#work" data-label="Work">
-                    <i class="fa-solid fa-briefcase"></i> Work
-                </a></li>
+        <!-- Work -->
+        <a href="#work" data-label="Work">
+            <i class="fa-solid fa-briefcase"></i> Career
+        </a>
 
-                <!-- Education -->
-                <li><a href="#edu" data-label="Education">
-                    <i class="fa-solid fa-graduation-cap"></i> Education
-                </a></li>
+        <!-- Education -->
+        <a href="#edu" data-label="Education">
+            <i class="fa-solid fa-graduation-cap"></i> Education
+        </a>
 
-                <!-- Publications -->
-                <li><a href="#publications" data-label="Publications">
-                    <i class="fa-solid fa-file-text"></i> Publications
-                </a></li>
+        <!-- Publications -->
+        <a href="#publications" data-label="Publications">
+            <i class="fa-solid fa-file-text"></i> Publications
+        </a>
 
-                <!-- Contact -->
-                <li><a href="#contact" data-label="Contact">
-                    <i class="fa-solid fa-paper-plane"></i> Contact
-                </a></li>
-                
-            </ul>
-        </nav>
-    </div>
+        <!-- Contact -->
+        <a href="#contact" data-label="Contact">
+            <i class="fa-solid fa-paper-plane"></i> Contact
+        </a>
+    </nav>
 
     <body>
         
@@ -68,6 +63,9 @@
 
             <!-- Profile -->
             <div class="profile-container">
+
+                <!-- Danish Flag Ribbon -->
+                <div class="dannebrog-ribbon"></div>
 
                 <!-- Profile picture -->
                 <div class="profile-img">
@@ -77,14 +75,12 @@
                 <!-- Profile text -->
                 <div class="profile-text">
                     <h1>Jonas S. Nielsen</h1>
-                    <!-- <span>Engineer</span> -->
                     <div class="social-container">
                         <a href="https://www.linkedin.com/in/jonassoeborgnielsen/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" style="color: #126bc4;"></i></a>
                         <a href="https://discordapp.com/users/291952694913138690" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord" style="color: #5d6af2;"></i></a>
                         <a href="https://github.com/MEGAjosni" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                         <a href="https://orcid.org/my-orcid?orcid=0009-0000-6295-6428" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" style="color: #a9d03f;"></i></a>
                     </div>
-                    <!-- INSIDE user-profile-text (for mobile) -->
                     <div class="profile-btn">
                         <a href="files/resume.pdf" download target="_blank"><i class="fa-solid fa-download"></i>&nbsp;Resume</a>
                         <a href="#contact">Contact&nbsp;<i class="fa-solid fa-paper-plane"></i></a>
@@ -102,7 +98,6 @@
                     <h3>Hello, I'm a <span id="role">Math Engineer</span></h3>
                     <h1><span>Engineer</span> in applied Mathematics and Data Science</h1>
                     <p>I have a strong passion for applying mathematical and data-driven methods to understand and solve complicated real-world problems. Through my education, specialized courses, and projects, I have gained solid experience in machine learning, deep learning (AI), simulation, scientific computing, and optimization. I work in a structured, analytical, and goal-oriented way to develop robust solutions, and thrive with challenges that both test my skills and provide opportunities for professional development.</p>
-                    <!-- <h1><span>Engineer</span> in Mathematical Modelling and Computation</h1> -->
                 
                     <!-- Key numbers -->
                     <div class="project-container-about">
@@ -124,61 +119,69 @@
 
                 <!-- Skills -->
                 <div class="section-heading">
-                    <h3><i class="fa-solid fa-layer-group" style="padding-top: 2px;"></i> Technical Skills</h3>
+                    <h3><i class="fa-solid fa-layer-group" style="padding-top: 2px;"></i>Technical Skills</h3>
                 </div>
+
                 <!-- Skills -->
                 <section id="skills" class="section-container">
-                    <!-- Heading -->
-                    <!-- <div class="section-heading">
-                        <h3><i class="fa-solid fa-code"></i> Programming</h3>
-                        <span><i class="fa-solid fa-layer-group"></i> Technical Skills</span>
-                    </div> -->
 
                     <div class="skill-container">
 
-                        <div class="certificate-box-container" style="justify-items: left;">
-                            <!-- Certificate -->
-                            <div class="certificate-box">
-                                <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator" target="_blank">
-                                    <img src="images/certificates/az-104-badge.png" alt="AZ-104 Microsoft Azure Administrator">
-                                    <strong>AZ-104</strong>
-                                    <span>Microsoft</span>
-                                </a>
-                            </div>
+                        <div class="skill-heading"><i class="fa-solid fa-shield" style="color: #0099ff;"></i>Certifications</div>
 
-                            <div class="certificate-box">
-                                <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals" target="_blank">
-                                    <img src="images/certificates/az-900-badge.png" alt="AZ-900 Microsoft Azure Fundamentals">
-                                    <strong>AZ-900</strong>
-                                    <span>Microsoft</span>
-                                </a>
-                            </div>
-                        
+                        <div class="skill-item-container" style="display: flex;">
+                            <!-- Certificate -->
+                            <a class="skill-item" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator" target="_blank">
+                                <img class="certificate" src="images/certificates/az-104-badge.png" alt="AZ-104 Microsoft Azure Administrator">
+                                <strong>AZ-104</strong>
+                                <div class="skill-item-location">Microsoft</div>
+                            </a>
+
+                            <a class="skill-item" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals" target="_blank">
+                                <img class="certificate" src="images/certificates/az-900-badge.png" alt="AZ-900 Microsoft Azure Fundamentals">
+                                <strong>AZ-900</strong>
+                                <div class="skill-item-location">Microsoft</div>
+                            </a>
+
                         </div>
                     
                     </div>
 
                     <div class="skill-container">
-                        <div class="skill-box-container">
+
+                        <div class="skill-heading"><i class="fa-solid fa-cube" style="color: #ffbb00;"></i>Frameworks & Platforms</div>
+
+                        <div class="skill-item-container" style="display: flex;">
                             <!-- Azure -->
-                            <a href="https://azure.microsoft.com/" target="_blank" class="programming-language-box">
+                            <a href="https://azure.microsoft.com/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/azure.png">
                                 <strong>Azure</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
-                                    <span style="width: 80%"></span>
+                                <div class="skill-item-bar">
+                                    <span style="width: 30%"></span>
+                                </div>
+                            </a>
+
+                            <!-- Entra ID -->
+                            <a href="https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id/" target="_blank" class="skill-item">
+                                <!-- Heading -->
+                                <img src="images/logos/entraid.png">
+                                <strong>Entra ID</strong>
+                                <!-- Progress Bar -->
+                                <div class="skill-item-bar">
+                                    <span style="width: 30%"></span>
                                 </div>
                             </a>
 
                             <!-- Azure Devops -->
-                            <a href="https://azure.microsoft.com/en-us/products/devops/" target="_blank" class="programming-language-box">
+                            <a href="https://azure.microsoft.com/en-us/products/devops/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/azuredevops.png">
                                 <strong>DevOps</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
-                                    <span style="width: 80%"></span>
+                                <div class="skill-item-bar">
+                                    <span style="width: 0%"></span>
                                 </div>
                             </a>
 
@@ -188,92 +191,94 @@
 
                     <div class="skill-container">
 
+                        <div class="skill-heading"><i class="fa-solid fa-code" style="color: #8866ff;"></i>Programming Languages</div>
+
                         <!-- Skills List -->
-                        <div class="skill-box-container">
+                        <div class="skill-item-container">
                             <!-- Python -->
-                            <a href="https://www.python.org/" target="_blank" class="programming-language-box">
+                            <a href="https://www.python.org/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/python.svg">
                                 <strong>Python</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
+                                <div class="skill-item-bar">
                                     <span style="width: 80%"></span>
                                 </div>
                             </a>
 
                             <!-- Julia -->
-                            <a href="https://www.julialang.org/" target="_blank" class="programming-language-box">
+                            <a href="https://www.julialang.org/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/julia.svg">
                                 <strong>Julia</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
+                                <div class="skill-item-bar">
                                     <span style="width: 60%"></span>
                                 </div>
                             </a>
 
                             <!-- Matlab -->
-                            <a href="https://www.mathworks.com/products/matlab.html" target="_blank" class="programming-language-box">
+                            <a href="https://www.mathworks.com/products/matlab.html" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/matlab.svg">
                                 <strong>Matlab</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
+                                <div class="skill-item-bar">
                                     <span style="width: 60%"></span>
                                 </div>
                             </a>
 
                             <!-- C/C++ -->
-                            <a href="https://cplusplus.com/" target="_blank" class="programming-language-box">
+                            <a href="https://cplusplus.com/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/cpp.svg">
                                 <strong>C/C++</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
+                                <div class="skill-item-bar">
                                     <span style="width: 50%"></span>
                                 </div>
                             </a>
 
                             <!-- R -->
-                            <a href="https://www.r-project.org/" target="_blank" class="programming-language-box">
+                            <a href="https://www.r-project.org/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/r.svg">
                                 <strong>R</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
+                                <div class="skill-item-bar">
                                     <span style="width: 50%"></span>
                                 </div>
                             </a>
 
                             <!-- Java -->
-                            <a href="https://www.java.com/" target="_blank" class="programming-language-box">
+                            <a href="https://www.java.com/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/java.svg">
                                 <strong>Java</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
+                                <div class="skill-item-bar">
                                     <span style="width: 40%"></span>
                                 </div>
                             </a>
 
                             <!-- HTML -->
-                            <a href="https://html.spec.whatwg.org/" target="_blank" class="programming-language-box">
+                            <a href="https://html.spec.whatwg.org/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/html.png">
                                 <strong>HTML</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
+                                <div class="skill-item-bar">
                                     <span style="width: 20%"></span>
                                 </div>
                             </a>
 
                             <!-- LaTeX -->
-                            <a href="https://www.latex-project.org/" target="_blank" class="programming-language-box">
+                            <a href="https://www.latex-project.org/" target="_blank" class="skill-item">
                                 <!-- Heading -->
                                 <img src="images/logos/latex.svg">
                                 <strong>LaTeX</strong>
                                 <!-- Progress Bar -->
-                                <div class="skill-box-bar">
+                                <div class="skill-item-bar">
                                     <span style="width: 80%"></span>
                                 </div>
                             </a>
@@ -286,64 +291,60 @@
                 
                 <!-- Work -->
                 <div class="section-heading">
-                    <h3><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+                    <h3><i class="fa-solid fa-briefcase"></i>Career</h3>
                 </div>
 
                 <section id="work" class="section-container">
 
-                    <!-- <div class="section-heading">
-                        <span><i class="fa-solid fa-file-lines"></i> Resume</span>
-                    </div> -->
-
-                    <div class="edu-work-box-container">
+                    <div class="occupation-box-container">
                         
                         <!-- cVation -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">Aug. 2025 - Present</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">Aug. 2025 ➜ Present</span>
                             <strong>Software Engineer</strong>
-                            <span class="edu-work-location">cVation - Part of Skaylink</span>
+                            <span class="occupation-location">cVation - Part of Skaylink</span>
                             <!-- <p>My first real job.</p> -->
                             <a href="https://www.cvation.com/en" target="_blank">
-                                <div class="edu-work-logo">
+                                <div class="occupation-logo">
                                     <img src="images/logos/cvation.png">
                                 </div>
                             </a>
                         </div>
 
                         <!-- DTU -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">Sep. 2024 - Dec. 2024</span>
-                            <strong>Class Teacher / Teaching Assistant</strong>
-                            <span class="edu-work-location">Technical University of Denmark - DTU</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">Sep. 2024 ➜ Dec. 2024</span>
+                            <strong>Class Teacher & Teaching Assistant</strong>
+                            <span class="occupation-location">Technical University of Denmark - DTU</span>
                             <p>As a teaching assistant in the courses Deep Learning, Introduction to Programming, and Multivariate Statistics, I have developed strong skills in communicating technically complex topics to individuals with limited prior knowledge, which has strengthened my abilities in both communication and technical guidance.</p>
                             <a href="https://www.dtu.dk/english/about/job-and-career/working-at-dtu/career-paths/teaching-assistant-professor-teaching-associate-professor" target="_blank">
-                                <div class="edu-work-logo">
+                                <div class="occupation-logo">
                                     <img src="images/logos/dtu.png">
                                 </div>
                             </a>
                         </div>
 
                         <!-- McDonald's -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">Jul. 2014 - Okt. 2021</span>
-                            <strong>Service Employee / Crew Trainer</strong>
-                            <span class="edu-work-location">McDonald's Hillerød</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">Jul. 2014 ➜ Okt. 2021</span>
+                            <strong>Service Employee & Crew Trainer</strong>
+                            <span class="occupation-location">McDonald's Hillerød</span>
                             <p>Throughout 7.5 years, I worked initially as a service employee for 2 years and since 5.5 years as a Crew Trainer. My time at McDonald's has provided me with valuable skills in teamwork, effective communication, thriving in a fast-paced environment and managing stressful situations. Additionally, I have also developed a strong sense of responsibility, both for my own growth within an organisation and supporting the development of others, as well as gaining a deep respect for schedules, structure and leadership.</p>
                             <a href="https://www.mcdonalds.com/dk/da-dk/location/hiller-d/hiller-d/herredsvejen-16/103.html" target="_blank">
-                                <div class="edu-work-logo">
+                                <div class="occupation-logo">
                                     <img src="images/logos/mcd.png">
                                 </div>
                             </a>
                         </div>
 
                         <!-- FK Distribution -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">Aug. 2013 - Jul. 2014</span>
-                            <strong>Newspaper Delivery</strong>
-                            <span class="edu-work-location">FK Distribution</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">Aug. 2013 ➜ Jul. 2014</span>
+                            <strong>Newspaper Deliverer</strong>
+                            <span class="occupation-location">FK Distribution</span>
                             <p>Working as a newspaper deliverer taught me the value of consistency, punctuality and hard work. It helped me develop a strong sense of responsibility and gave me a deeper appreciation for what it means to earn your own money through commitment and effort.</p>
-                            <a href="https://www.fkdistribution.dk/" target="_blank">
-                                <div class="edu-work-logo">
+                            <a href="https://fk.dk/bliv-omdeler/" target="_blank">
+                                <div class="occupation-logo">
                                     <img src="images/logos/FK.png">
                                 </div>
                             </a>
@@ -355,51 +356,47 @@
 
                 <!-- Education -->
                 <div class="section-heading">
-                    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    <h3><i class="fa-solid fa-graduation-cap"></i>Education</h3>
                 </div>
                 
                 <section id="edu" class="section-container">
 
-                    <!-- <div class="section-heading">
-                        <span><i class="fa-solid fa-file-lines"></i> Resume</span>
-                    </div> -->
-
-                    <div class="edu-work-box-container">
+                    <div class="occupation-box-container">
                         
                         <!-- Master -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">Sep. 2022 - Mar. 2025</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">Sep. 2022 ➜ Mar. 2025</span>
                             <strong>MSc Eng Mathematical Modeling and Computation</strong>
-                            <span class="edu-work-location">Technical University of Denmark - DTU</span>
+                            <span class="occupation-location">Technical University of Denmark - DTU</span>
                             <p>I have specialized in machine learning techniques focusing on deep learning, computer vision, Bayesian and model-based machine learning, computational data analysis, and high-performance computing. My thesis involved a deep investigation into Universal Physics-Informed Neural Networks for discovering hidden/unknown dynamics in dynamical systems.</p>
                             <a href="https://www.dtu.dk/english/education/graduate/msc-programmes/mathematical-modelling-and-computation" target="_blank">
-                                <div class="edu-work-logo">
+                                <div class="occupation-logo">
                                     <img src="images/logos/dtu.png">
                                 </div>
                             </a>
                         </div>
 
                         <!-- Bachelor -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">Sep. 2019 - May 2022</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">Sep. 2019 ➜ May 2022</span>
                             <strong>BSc Eng Mathematics and Technology</strong>
-                            <span class="edu-work-location">Technical University of Denmark - DTU</span>
+                            <span class="occupation-location">Technical University of Denmark - DTU</span>
                             <p>I have acquired fundamental knowledge and skills in applied mathematics and data-driven techniques with a focus on mathematical modelling, optimization, and numerical methods through courses in machine learning, graph theory, image analysis, operations research, numerical algorithms, simulation, statistics, probability, advanced mathematics, and programming.</p>
                             <a href="https://www.dtu.dk/uddannelse/bachelor/uddannelsesretninger/anvendt-matematik" target="_blank">
-                                <div class="edu-work-logo">
+                                <div class="occupation-logo">
                                     <img src="images/logos/dtu.png">
                                 </div>
                             </a>
                         </div>
 
                         <!-- HTX -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">Aug. 2015 - Jun. 2018</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">Aug. 2015 ➜ Jun. 2018</span>
                             <strong>Gymnasium: Higher Technical Exam - HTX</strong>
-                            <span class="edu-work-location">Erhvervsskolen Nordsjælland - ESNORD</span>
+                            <span class="occupation-location">Erhvervsskolen Nordsjælland - ESNORD</span>
                             <p>I developed valueable academic and personal skills that supported my transition from pupil to university student. Taking additional A-level subjects in Mathematics, Construction, Physics, and Chemistry, I gained a solid technical foundation and strengthened analytical mindset well suited for pursuing a university degree in engineering.</p>
                             <a href="https://unord.dk/uddannelser/matematik-a-fysik-a" target="_blank">
-                                <div class="edu-work-logo">
+                                <div class="occupation-logo">
                                     <img src="images/logos/esnord.png">
                                 </div>
                             </a>
@@ -412,33 +409,33 @@
 
                 <!-- Publications -->
                  <div class="section-heading">
-                        <h3><i class="fa-solid fa-file-lines"></i> Publications</h3>
+                        <h3><i class="fa-solid fa-file-lines"></i>Publications</h3>
                     </div>
                 <section id="publications" class="section-container">
 
-                    <div class="edu-work-box-container">
+                    <div class="occupation-box-container">
                         
                         <!-- PIR -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">July 2025</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">July 2025</span>
                             <strong>Physics-Informed Regression: Parameter Estimation in Nonlinear Models</strong>
-                            <span class="edu-work-location">Jonas S. Nielsen, Marcus G. Jacobsen, Albert B. Olson, Mads P. Sørensen, Allan P. Engsig-Karup</span>
+                            <span class="occupation-location">Jonas S. Nielsen, Marcus G. Jacobsen, Albert B. Olson, Mads P. Sørensen, Allan P. Engsig-Karup</span>
                             <a class="pub-link">Soon</a>
                         </div>
 
                         <!-- Master Thesis -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">March 2025</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">March 2025</span>
                             <strong>Universal Physics-Informed Neural Networks for Hidden Discovery</strong>
-                            <span class="edu-work-location">Master Thesis: Jonas S. Nielsen</span>
+                            <span class="occupation-location">Master Thesis: Jonas S. Nielsen</span>
                             <a class="pub-link" href="files/jonas_master_thesis.pdf" target="_blank">Read</a>
                         </div>
 
                         <!-- Bachelors Project -->
-                        <div class="edu-work-box">
-                            <span class="edu-work-year">May 2022</span>
+                        <div class="occupation-box">
+                            <span class="occupation-year">May 2022</span>
                             <strong>Geodesic Circle Packing on 2D Surfaces</strong>
-                            <span class="edu-work-location">Bachelors Project: Jonas S. Nielsen</span>
+                            <span class="occupation-location">Bachelors Project: Jonas S. Nielsen</span>
                             <a class="pub-link" href="files/jonas_bachelors_project.pdf" target="_blank">Read</a>
                         </div>
 
@@ -448,8 +445,7 @@
 
                 <!-- Heading -->
                 <div class="section-heading">
-                    <!-- <span><i class="fa-solid fa-paper-plane"></i> Contact</span> -->
-                    <h3><i class="fa-solid fa-paper-plane" style="padding-right: 5px;"></i> Contact</h3>
+                    <h3><i class="fa-solid fa-paper-plane"></i>Contact</h3>
                 </div>
 
                 <!-- Contact -->
@@ -467,7 +463,7 @@
                         <!-- Email -->
                         <div class="contact-box">
                             <div class="contact-box-icon">
-                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-envelope" style="color: #0099ff;"></i>
                                 <strong>Email</strong>
                             </div>
                             <a href="mailto:jonassoeborgnielsen@icloud.com">jonassoeborgnielsen@icloud.com</a>
@@ -476,11 +472,10 @@
                         <!-- Location -->
                         <div class="contact-box">
                             <div class="contact-box-icon">
-                                <i class="fa-solid fa-location-dot"></i>
+                                <i class="fa-solid fa-location-dot" style="color: #ee3366;"></i>
                                 <strong>Location</strong>
                             </div>
-                            <!-- <span>Kongens Lyngby, Copenhagen, Denmark</span> -->
-                            <span><a href="https://www.google.com/maps/place/2800+Kongens+Lyngby/@55.7521856,12.4140357,11.4z/data=!4m6!3m5!1s0x46524e0cd2198e09:0xca6a70136052238a!8m2!3d55.763516!4d12.4949429!16zL20vMDQ3anhy?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lyngby, Copenhagen, Denmark</a></span>
+                            <a href="https://www.google.com/maps/place/2800+Kongens+Lyngby/@55.7521856,12.4140357,11.4z/data=!4m6!3m5!1s0x46524e0cd2198e09:0xca6a70136052238a!8m2!3d55.763516!4d12.4949429!16zL20vMDQ3anhy?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lyngby, Copenhagen, Denmark</a>
                         </div>
 
                     </div>
@@ -537,8 +532,8 @@
             // Menu Active Link Highlighting
             document.addEventListener("DOMContentLoaded", () => {
                 const sections = document.querySelectorAll("section");
-                const navLinks = document.querySelectorAll(".menu ul li a");
-                const headerOffset = 50; // adjust to your sticky menu height
+                const navLinks = document.querySelectorAll(".nav-menu a");
+                const headerOffset = 100; // adjust to your sticky menu height
 
                 function setActiveLink() {
                     let currentSection = "";
