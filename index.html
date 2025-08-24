@@ -23,6 +23,45 @@
         <!-- Scroll animation with AOS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
+
+    <!-- header -->
+    <div class="menu">
+        <nav>
+            <ul>
+                <!-- About -->
+                <li><a href="#about" data-label="About" class="active">
+                    <i class="fa-solid fa-address-book"></i> About
+                </a></li>
+
+                <!-- Skill -->
+                <li><a href="#skills" data-label="Technical Skills">
+                    <i class="fa-solid fa-layer-group"></i> Technical Skills
+                </a></li>
+
+                <!-- Work -->
+                <li><a href="#work" data-label="Work">
+                    <i class="fa-solid fa-briefcase"></i> Work
+                </a></li>
+
+                <!-- Education -->
+                <li><a href="#edu" data-label="Education">
+                    <i class="fa-solid fa-graduation-cap"></i> Education
+                </a></li>
+
+                <!-- Publications -->
+                <li><a href="#publications" data-label="Publications">
+                    <i class="fa-solid fa-file-text"></i> Publications
+                </a></li>
+
+                <!-- Contact -->
+                <li><a href="#contact" data-label="Contact">
+                    <i class="fa-solid fa-paper-plane"></i> Contact
+                </a></li>
+                
+            </ul>
+        </nav>
+    </div>
+
     <body>
         
         <div class="main-container">
@@ -262,7 +301,7 @@
                         <div class="edu-work-box">
                             <span class="edu-work-year">Aug. 2025 - Present</span>
                             <strong>Software Engineer</strong>
-                            <span class="edu-work-location">cVation</span>
+                            <span class="edu-work-location">cVation - Part of Skaylink</span>
                             <!-- <p>My first real job.</p> -->
                             <a href="https://www.cvation.com/en" target="_blank">
                                 <div class="edu-work-logo">
@@ -373,7 +412,7 @@
 
                 <!-- Publications -->
                  <div class="section-heading">
-                        <h3><i class="fa-solid fa-upload"></i> Publications</h3>
+                        <h3><i class="fa-solid fa-file-lines"></i> Publications</h3>
                     </div>
                 <section id="publications" class="section-container">
 
@@ -456,55 +495,6 @@
 
 
             </div>
-            
-            
-
-            
-            <!-- header -->
-            <div class="menu">
-                <header>
-                    <nav>
-                        <!-- Dark light button -->
-                        <button class="dark-light-btn">
-                            <i class="fa-regular fa-sun"></i>
-                            <!-- <i class="fa-solid fa-moon"></i> -->
-                        </button>
-                        <!-- Menu -->
-                        <ul>
-                            <!-- About -->
-                            <li><a href="#about" data-label="About" class="active">
-                                <i class="fa-solid fa-address-book"></i>
-                            </a></li>
-
-                            <!-- Skill -->
-                            <li><a href="#skills" data-label="Technical Skills">
-                                <i class="fa-solid fa-layer-group"></i>
-                            </a></li>
-
-                            <!-- Work -->
-                            <li><a href="#work" data-label="Work">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </a></li>
-
-                            <!-- Education -->
-                            <li><a href="#edu" data-label="Education">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </a></li>
-
-                            <!-- Publications -->
-                            <li><a href="#publications" data-label="Publications">
-                                <i class="fa-solid fa-upload"></i>
-                            </a></li>
-
-                            <!-- Contact -->
-                            <li><a href="#contact" data-label="Contact">
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </a></li>
-                            
-                        </ul>
-                    </nav>
-                </header>
-            </div>
 
         </div>
         
@@ -544,42 +534,20 @@
                 typeRole();
             });
         
-            // Dark/Light Mode Toggle
+            // Menu Active Link Highlighting
             document.addEventListener("DOMContentLoaded", () => {
-                const toggleButton = document.querySelector(".dark-light-btn");
-                const htmlElement = document.documentElement;
-
-                const currentTheme = localStorage.getItem("mode");
-
-                if (currentTheme == "light") {
-                    htmlElement.classList.add("light-mode");
-                    toggleButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
-                }
-
-                toggleButton.addEventListener("click", () => {
-                    htmlElement.classList.toggle("light-mode");
-
-                    // Change icon
-                    const isLightMode = htmlElement.classList.contains("light-mode");
-                    toggleButton.innerHTML = isLightMode ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
-
-                    // Save the current theme in local storage
-                    localStorage.setItem("mode", isLightMode ? "light" : "dark");
-                });
-
-
-                // Nav highlight
-                const section = document.querySelectorAll("section");
-                const navLinks = document.querySelectorAll("ul li a");
+                const sections = document.querySelectorAll("section");
+                const navLinks = document.querySelectorAll(".menu ul li a");
+                const headerOffset = 50; // adjust to your sticky menu height
 
                 function setActiveLink() {
                     let currentSection = "";
-                    section.forEach((section) => {
-                        const sectionTop = section.offsetTop;
-                        const sectionHeight = section.offsetHeight;
+                    sections.forEach((sec) => {
+                        const sectionTop = sec.offsetTop;
+                        const sectionHeight = sec.offsetHeight;
 
-                        if (window.scrollY >= sectionTop - sectionHeight / 3) {
-                            currentSection = section.getAttribute("id");
+                        if (window.scrollY >= sectionTop - sectionHeight / 3 - headerOffset) {
+                            currentSection = sec.getAttribute("id");
                         }
                     });
 
@@ -588,13 +556,14 @@
                         if (link.getAttribute("href") === `#${currentSection}`) {
                             link.classList.add("active");
                         }
-                    })
+                    });
                 }
 
-                window.addEventListener("scroll", setActiveLink);
-                        
+                setActiveLink(); // Initial call
 
+                window.addEventListener("scroll", setActiveLink);
             });
+            
 
             // Set your birthdate here:
             const birthDate = new Date('1999-02-18'); // YYYY-MM-DD format
