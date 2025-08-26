@@ -28,6 +28,7 @@ ul{
     --bg-gradient-start: #2d2f31;
     --bg-gradient-end: #272a2e;
     --social-color: #ffffff;
+    --bar-background: #000000aa;
     --dk-red: #c60c30; /* Dannebrog red */
     --transition-speed: 0.3s;
 }
@@ -124,7 +125,7 @@ ul{
 /* Body */
 body{
     color: var(--text-color);
-    background-image: url('../images/dark_mountain.png');
+    background-image: url('../images/bioluminescence_beach.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -423,7 +424,7 @@ body{
 .skill-item-bar{
     width: 90%;
     height: 7px;
-    background-color: var(--border-color);
+    background-color: var(--bar-background);
     border-radius: 10px;
     overflow: hidden;
     margin-top: 5px;
