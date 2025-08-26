@@ -671,11 +671,10 @@ img.certificate{
     .profile-btn {
         display: none;
     }
-    .menu {
+    .nav-menu {
         top: auto;      /* reset top */
         bottom: 0;      /* stick to bottom */
-        position: fixed; /* stays visible while scrolling */
-        
+        position: fixed; /* stays visible while scrolling */ 
     }
 
     .section-container:last-child{
@@ -689,6 +688,18 @@ img.certificate{
 
     .main-container{
         grid-template-columns: 1fr;
+    }
+
+    @media(max-width: 900px){
+        .nav-menu a{
+            font-size: 0px;
+        }
+        .nav-menu a i{
+            font-size: 40px;
+        }
+        .nav-menu{
+            height: 100px;
+        }
     }
 
 }
