@@ -506,14 +506,14 @@ img.certificate{
     position: absolute;
     right: 10px;
     top: 20px;
-    height: 20px;
+    height: 25px;
     display: flex;
     grid-gap: 15px;
 }
 .pub-links a{
     position: relative;
     color: var(--link-color);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     /* justify-content: center;
     align-items: center; */
