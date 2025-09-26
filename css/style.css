@@ -297,7 +297,9 @@ body{
     color: var(--text-color);
     font-size: 1.0rem;
     margin-top: 10px;
-    max-width: 750px;
+    width: 100%;
+    text-align: justify;
+    hyphens: auto; 
 }
 .project-container-about{
     display: grid;
@@ -486,6 +488,8 @@ img.certificate{
     font-size: 0.9rem;
     margin-top: 10px;
     font-weight: 400;
+    text-align: justify;
+    hyphens: auto;
 }
 .occupation-logo{
     position: absolute;
