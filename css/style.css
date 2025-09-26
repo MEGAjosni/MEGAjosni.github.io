@@ -39,21 +39,23 @@ ul{
 .skill-item,
 .social-container a,
 .occupation-logo,
-.occupation-logo img
+.occupation-logo img,
+.pub-links a img
 {
     transition: transform var(--transition-speed) ease, filter var(--transition-speed) ease;
 }
 :is(
     .skill-item,
     .social-container a,
-    .occupation-logo
+    .occupation-logo,
 ):hover{
     transform: scale(1.15);
     cursor: pointer;
 }
 :is(
     .social-container a,
-    .occupation-logo img
+    .occupation-logo img,
+    .pub-links a img
 ):hover {
     filter: brightness(0) invert(1);
     cursor: pointer;
@@ -120,7 +122,7 @@ ul{
 /* Body */
 body{
     color: var(--text-color);
-    background-image: url('../images/bioluminescence_beach.png');
+    background-image: url('../images/backgrounds/bioluminescence_beach.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -514,13 +516,14 @@ img.certificate{
     position: relative;
     color: var(--link-color);
     font-size: 1.2rem;
+    height: 1.2rem;
     font-weight: 500;
     /* justify-content: center;
     align-items: center; */
     cursor: pointer;
 }
-.pub-links a svg{
-    height: 100%;
+.pub-links a img{
+    height: 1.5rem;
     fill: var(--link-color);
 }
 

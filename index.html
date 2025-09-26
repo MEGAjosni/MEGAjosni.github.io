@@ -7,21 +7,14 @@
         <title>Jonas S. Nielsen</title>
         <!-- Tab icon -->
         <link rel="icon" href="images/tabicon.png" type="image/png">
-
         <!-- css -->
         <link rel="stylesheet" href="css/style.css">
-        <!-- fav-icon -->
-        <!-- <link rel="shortcut icon" href="images/fav-icon.png"> -->
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Devicon -->
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <!-- Scroll animation with AOS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <!-- header -->
@@ -33,7 +26,7 @@
 
         <!-- Skill -->
         <a href="#skills" data-label="Technical Skills">
-            <i class="fa-solid fa-cog"></i> Technical Skills
+            <i class="fa-solid fa-desktop"></i> Technical Skills
         </a>
 
         <!-- Work -->
@@ -42,7 +35,7 @@
         </a>
 
         <!-- Education -->
-        <a href="#edu" data-label="Education">
+        <a href="#education" data-label="Education">
             <i class="fa-solid fa-university"></i> Education
         </a>
 
@@ -119,358 +112,60 @@
 
                 <!-- Skills -->
                 <div class="section-heading">
-                    <h3><i class="fa-solid fa-cog" style="color: #ff8833;"></i>Technical Skills</h3>
+                    <h3><i class="fa-solid fa-desktop" style="color: #30d15b;"></i>Technical Skills</h3>
                 </div>
-
-                <!-- Skills -->
                 <section id="skills" class="section-container">
 
-                    
+                    <!-- Certifications -->
                     <div class="skill-container">
-
                         <div class="skill-heading"><i class="fa-solid fa-shield" style="color: #0099ff;"></i>Certifications</div>
-
-                        <div class="skill-item-container" style="display: flex;">
-                            <!-- Certificate -->
-                            <a class="skill-item" href="https://learn.microsoft.com/en-us/users/jonasseborgnielsen-8140/credentials/e2103dad51ef8c21" target="_blank" title="Azure Administrator Associate">
-                                <img class="certificate" src="images/certificates/az-104-badge.png" alt="AZ-104 Microsoft Azure Administrator">
-                                <strong>AZ-104</strong>
-                                <div class="skill-item-location">Microsoft</div>
-                            </a>
-
-                            <a class="skill-item" href="https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003" target="_blank" title="HashiCorp Terraform Associate">
-                                <img class="certificate" src="images/certificates/hcta0-003-badge.png" alt="HCTA0-003 HashiCorp Terraform Associate">
-                                <strong>HCTA0</strong>
-                                <div class="skill-item-location">HashiCorp</div>
-                            </a>
-
-                        </div>
-                    
+                        <div id="certification-container" class="skill-item-container" style="display: flex;"></div>
                     </div>
 
-
+                    <!-- Frameworks -->
                     <div class="skill-container">
-
-                        <div class="skill-heading"><i class="fa-solid fa-code" style="color: #8866ff;"></i>Programming Languages</div>
-
-                        <!-- Skills List -->
-                        <div class="skill-item-container">
-                            <!-- Python -->
-                            <a href="https://www.python.org/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/python.svg">
-                                <strong>Python</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 80%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Advanced
-                                </div>
-                            </a>
-
-                            <!-- Julia -->
-                            <a href="https://www.julialang.org/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/julia.svg">
-                                <strong>Julia</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 60%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Research
-                                </div>
-                            </a>
-
-                            <!-- Matlab -->
-                            <a href="https://www.mathworks.com/products/matlab.html" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/matlab.svg">
-                                <strong>Matlab</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 60%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Simulation
-                                </div>
-                            </a>
-
-                            <!-- C/C++ -->
-                            <a href="https://cplusplus.com/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/cpp.svg">
-                                <strong>C/C++</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 50%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Basic
-                                </div>
-                            </a>
-
-                            <!-- C# -->
-                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/csharp.svg">
-                                <strong>C#</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 40%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    .NET
-                                </div>
-                            </a>
-
-                            <!-- R -->
-                            <a href="https://www.r-project.org/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/r.svg">
-                                <strong>R</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 50%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Statistics
-                                </div>
-                            </a>
-
-                            <!-- Java -->
-                            <a href="https://www.java.com/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/java.svg">
-                                <strong>Java</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 40%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Basic
-                                </div>
-                            </a>
-
-                            <!-- HTML -->
-                            <a href="https://html.spec.whatwg.org/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/html5.svg">
-                                <strong>HTML</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 20%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Portfolio
-                                </div>
-                            </a>
-
-                            <!-- LaTeX -->
-                            <a href="https://www.latex-project.org/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/latex.svg">
-                                <strong>LaTeX</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 80%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Advanced
-                                </div>
-                            </a>
-
-                            <!-- Terraform -->
-                            <a href="https://developer.hashicorp.com/terraform/" target="_blank" class="skill-item">
-                                <!-- Heading -->
-                                <img src="images/logos/terraform.svg">
-                                <strong>Terraform</strong>
-                                <!-- Progress Bar -->
-                                <!-- <div class="skill-item-bar">
-                                    <span style="width: 80%"></span>
-                                </div> -->
-                                <div class="skill-item-location">
-                                    Infrastructure
-                                </div>
-                            </a>
-
-                        </div>
+                        <div class="skill-heading"><i class="fa-solid fa-cube" style="color: #ffbb00;"></i>Platforms & Tools</div>
+                        <div id="framework-container" class="skill-item-container"></div>
                     </div>
 
-                </section>
+                    <!-- Programming Languages -->
+                    <div class="skill-container">
+                        <div class="skill-heading"><i class="fa-solid fa-code" style="color: #8866ff;"></i>Programming Languages</div>
+                        <div id="programming-languages-container" class="skill-item-container"></div>
+                    </div>
 
+                </section> 
                 
+
                 <!-- Work -->
                 <div class="section-heading">
-                    <h3><i class="fa-solid fa-id-badge" style="color: #00eeee;"></i>Career</h3>
+                    <h3><i class="fa-solid fa-id-badge" style="color: #22bbff;"></i>Career</h3>
                 </div>
-
                 <section id="work" class="section-container">
-
-                    <div class="occupation-box-container">
-                        
-                        <!-- cVation -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">Aug. 2025 ➜ Present</span>
-                            <strong>Software Engineer</strong>
-                            <span class="occupation-location">cVation - Part of Skaylink</span>
-                            <!-- <p>My first real job.</p> -->
-                            <a href="https://www.cvation.com/en" target="_blank" class="occupation-logo" style="display: flex; justify-content: center; align-items: center; background-color: #ffffff; width: 40px; height: 40px; padding: 5px; border-radius: 10px;">
-                                <img src="images/logos/cvation.svg" style="height: 30px; width: auto;">
-                            </a>
-                        </div>
-
-                        <!-- DTU -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">Sep. 2024 ➜ Dec. 2024</span>
-                            <strong>Class Teacher & Teaching Assistant</strong>
-                            <span class="occupation-location">Technical University of Denmark - DTU</span>
-                            <p>As a teaching assistant in the courses Deep Learning, Introduction to Programming, and Multivariate Statistics, I have developed strong skills in communicating technically complex topics to individuals with limited prior knowledge, which has strengthened my abilities in both communication and technical guidance.</p>
-                            <a href="https://www.dtu.dk/english/about/job-and-career/working-at-dtu/career-paths/teaching-assistant-professor-teaching-associate-professor" target="_blank">
-                                <div class="occupation-logo">
-                                    <img src="images/logos/dtu.svg">
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- McDonald's -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">Jul. 2014 ➜ Okt. 2021</span>
-                            <strong>Service Employee & Crew Trainer</strong>
-                            <span class="occupation-location">McDonald's Hillerød</span>
-                            <p>Throughout 7.5 years, I worked initially as a service employee for 2 years and since 5.5 years as a Crew Trainer. My time at McDonald's has provided me with valuable skills in teamwork, effective communication, thriving in a fast-paced environment and managing stressful situations. Additionally, I have also developed a strong sense of responsibility, both for my own growth within an organisation and supporting the development of others, as well as gaining a deep respect for schedules, structure and leadership.</p>
-                            <a href="https://www.mcdonalds.com/dk/da-dk/location/hiller-d/hiller-d/herredsvejen-16/103.html" target="_blank">
-                                <div class="occupation-logo">
-                                    <img src="images/logos/mcd.svg">
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- FK Distribution -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">Aug. 2013 ➜ Jul. 2014</span>
-                            <strong>Newspaper Deliverer</strong>
-                            <span class="occupation-location">FK Distribution</span>
-                            <p>Working as a newspaper deliverer taught me the value of consistency, punctuality and hard work. It helped me develop a strong sense of responsibility and gave me a deeper appreciation for what it means to earn your own money through commitment and effort.</p>
-                            <a href="https://fk.dk/bliv-omdeler/" target="_blank">
-                                <div class="occupation-logo">
-                                    <img src="images/logos/FK.svg">
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    
+                    <div id="work-container" class="occupation-box-container"></div>
                 </section>
-
+            
 
                 <!-- Education -->
                 <div class="section-heading">
-                    <h3><i class="fa-solid fa-university" style="color: #ffdd99;"></i>Education</h3>
+                    <h3><i class="fa-solid fa-university" style="color: #ff8866;"></i>Education</h3>
                 </div>
-                
-                <section id="edu" class="section-container">
-
-                    <div class="occupation-box-container">
-                        
-                        <!-- Master -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">Sep. 2022 ➜ Mar. 2025</span>
-                            <strong>MSc Eng Mathematical Modeling and Computation</strong>
-                            <span class="occupation-location">Technical University of Denmark - DTU</span>
-                            <p>I have specialized in machine learning techniques focusing on deep learning, computer vision, Bayesian and model-based machine learning, computational data analysis, and high-performance computing. My thesis involved a deep investigation into Universal Physics-Informed Neural Networks for discovering hidden/unknown dynamics in dynamical systems.</p>
-                            <a href="https://www.dtu.dk/english/education/graduate/msc-programmes/mathematical-modelling-and-computation" target="_blank">
-                                <div class="occupation-logo">
-                                    <img src="images/logos/dtu.svg">
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Bachelor -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">Sep. 2019 ➜ May 2022</span>
-                            <strong>BSc Eng Mathematics and Technology</strong>
-                            <span class="occupation-location">Technical University of Denmark - DTU</span>
-                            <p>I have acquired fundamental knowledge and skills in applied mathematics and data-driven techniques with a focus on mathematical modelling, optimization, and numerical methods through courses in machine learning, graph theory, image analysis, operations research, numerical algorithms, simulation, statistics, probability, advanced mathematics, and programming.</p>
-                            <a href="https://www.dtu.dk/uddannelse/bachelor/uddannelsesretninger/anvendt-matematik" target="_blank">
-                                <div class="occupation-logo">
-                                    <img src="images/logos/dtu.svg">
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- HTX -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">Aug. 2015 ➜ Jun. 2018</span>
-                            <strong>Gymnasium: Higher Technical Exam - HTX</strong>
-                            <span class="occupation-location">Erhvervsskolen Nordsjælland - ESNORD</span>
-                            <p>I developed valueable academic and personal skills that supported my transition from pupil to university student. Taking additional A-level subjects in Mathematics, Construction, Physics, and Chemistry, I gained a solid technical foundation and strengthened analytical mindset well suited for pursuing a university degree in engineering.</p>
-                            <a href="https://unord.dk/uddannelser/matematik-a-fysik-a" target="_blank">
-                                <div class="occupation-logo">
-                                    <img src="images/logos/esnord.png">
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                
+                <section id="education" class="section-container">
+                    <div id="education-container" class="occupation-box-container"></div>
                 </section>
 
 
                 <!-- Publications -->
-                 <div class="section-heading">
-                        <h3><i class="fa-solid fa-file-lines" style="color: #bbccff;"></i>Publications</h3>
-                    </div>
+                <div class="section-heading">
+                    <h3><i class="fa-solid fa-file-lines" style="color: #ffee55;"></i>Publications</h3>
+                </div>
                 <section id="publications" class="section-container">
-
-                    <div class="occupation-box-container">
-                        
-                        <!-- PIR -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">July 2025</span>
-                            <strong>Physics-Informed Regression: Parameter Estimation in Nonlinear Models</strong>
-                            <span class="occupation-location">Jonas S. Nielsen, Marcus G. Jacobsen, Albert B. Olson, Mads P. Sørensen, Allan P. Engsig-Karup</span>
-                            <div class="pub-links">
-                                <a href="http://arxiv.org/abs/2508.19249" target="_blank" title="arXiv preprint">
-                                    <svg id="primary_logo_-_single_color_-_white" data-name="primary logo - single color - white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.978 110.119"><path d="M492.976,269.5l24.36-29.89c1.492-1.989,2.2-3.03,1.492-4.723a5.142,5.142,0,0,0-4.481-3.161h0a4.024,4.024,0,0,0-3.008,1.108L485.2,261.094Z" transform="translate(-358.165 -223.27)" fill="currentColor"/><path d="M526.273,325.341,493.91,287.058l-.972,1.033-7.789-9.214-7.743-9.357-4.695,5.076a4.769,4.769,0,0,0,.015,6.53L520.512,332.2a3.913,3.913,0,0,0,3.137,1.192,4.394,4.394,0,0,0,4.027-2.818C528.4,328.844,527.6,327.133,526.273,325.341Z" transform="translate(-358.165 -223.27)" fill="currentColor"/><path d="M479.215,288.087l6.052,6.485L458.714,322.7a2.98,2.98,0,0,1-2.275,1.194,3.449,3.449,0,0,1-3.241-2.144c-.513-1.231.166-3.15,1.122-4.168l.023-.024.021-.026,24.851-29.448m-.047-1.882-25.76,30.524c-1.286,1.372-2.084,3.777-1.365,5.5a4.705,4.705,0,0,0,4.4,2.914,4.191,4.191,0,0,0,3.161-1.563l27.382-29.007-7.814-8.372Z" transform="translate(-358.165 -223.27)" fill="currentColor"/><path d="M427.571,255.154c1.859,0,3.1,1.24,3.985,3.453,1.062-2.213,2.568-3.453,4.694-3.453h14.878a4.062,4.062,0,0,1,4.074,4.074v7.828c0,2.656-1.327,4.074-4.074,4.074-2.656,0-4.074-1.418-4.074-4.074V263.3H436.515a2.411,2.411,0,0,0-2.656,2.745v27.188h10.007c2.658,0,4.074,1.329,4.074,4.074s-1.416,4.074-4.074,4.074h-26.39c-2.659,0-3.986-1.328-3.986-4.074s1.327-4.074,3.986-4.074h8.236V263.3h-7.263c-2.656,0-3.985-1.329-3.985-4.074,0-2.658,1.329-4.074,3.985-4.074Z" transform="translate(-358.165 -223.27)" fill="currentColor"/><path d="M539.233,255.154c2.656,0,4.074,1.416,4.074,4.074v34.007h10.1c2.746,0,4.074,1.329,4.074,4.074s-1.328,4.074-4.074,4.074H524.8c-2.656,0-4.074-1.328-4.074-4.074s1.418-4.074,4.074-4.074h10.362V263.3h-8.533c-2.744,0-4.073-1.329-4.073-4.074,0-2.658,1.329-4.074,4.073-4.074Zm4.22-17.615a5.859,5.859,0,1,1-5.819-5.819A5.9,5.9,0,0,1,543.453,237.539Z" transform="translate(-358.165 -223.27)" fill="currentColor"/><path d="M605.143,259.228a4.589,4.589,0,0,1-.267,1.594L590,298.9a3.722,3.722,0,0,1-3.721,2.48h-5.933a3.689,3.689,0,0,1-3.808-2.48l-15.055-38.081a3.23,3.23,0,0,1-.355-1.594,4.084,4.084,0,0,1,4.164-4.074,3.8,3.8,0,0,1,3.718,2.656l14.348,36.134,13.9-36.134a3.8,3.8,0,0,1,3.72-2.656A4.084,4.084,0,0,1,605.143,259.228Z" transform="translate(-358.165 -223.27)" fill="currentColor"/><path d="M390.61,255.154c5.018,0,8.206,3.312,8.206,8.4v37.831H363.308a4.813,4.813,0,0,1-5.143-4.929V283.427a8.256,8.256,0,0,1,7-8.148l25.507-3.572v-8.4H362.306a4.014,4.014,0,0,1-4.141-4.074c0-2.87,2.143-4.074,4.355-4.074Zm.059,38.081V279.942l-24.354,3.4v9.9Z" transform="translate(-358.165 -223.27)" fill="currentColor"/><path d="M448.538,224.52h.077c1,.024,2.236,1.245,2.589,1.669l.023.028.024.026,46.664,50.433a3.173,3.173,0,0,1-.034,4.336l-4.893,5.2-6.876-8.134L446.652,230.4c-1.508-2.166-1.617-2.836-1.191-3.858a3.353,3.353,0,0,1,3.077-2.02m0-1.25a4.606,4.606,0,0,0-4.231,2.789c-.705,1.692-.2,2.88,1.349,5.1l39.493,47.722,7.789,9.214,5.853-6.221a4.417,4.417,0,0,0,.042-6.042L452.169,225.4s-1.713-2.08-3.524-2.124Z" transform="translate(-358.165 -223.27)" fill="currentColor"/></svg> 
-                                </a>
-                                <!-- <a style="top: -2.6px;" href="https://www.siam.org/publications/siam-journals/siam-journal-on-applied-dynamical-systems/" target="_blank" title="DOI link">
-                                    <svg style="height: 14px;" viewBox="704 660 2025 672" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M704 1236.59 704 1332 1087.07 1332C1108.42 1332 1119.83 1326.32 1119.83 1306.38L1119.83 1304.96 1119.83 1306.38C1121.24 1326.32 1132.64 1332 1154.01 1332L1408.91 1332C1430.28 1332 1441.67 1326.32 1441.67 1306.38L1441.67 1304.96 1441.67 1306.38C1441.67 1326.32 1453.06 1332 1474.43 1332L1813.33 1332C1834.7 1332 1844.67 1326.32 1846.11 1306.38L1846.11 1304.96 1846.11 1306.38C1846.11 1326.32 1857.51 1332 1878.85 1332L2078.22 1332C2093.9 1332 2109.55 1320.6 2113.81 1306.38 2116.67 1302.1 2116.67 1296.41 2116.67 1292.13L2116.67 961.831 2175.07 961.831C2196.41 961.831 2213.5 978.912 2213.5 1001.69L2213.5 1331.99 2308.92 1331.99 2308.92 961.831 2361.59 961.831C2383.58 961.789 2401.43 979.57 2401.47 1001.55L2401.47 1001.69 2401.47 1292.12C2401.47 1296.4 2401.47 1302.08 2404.33 1306.37 2410.02 1320.59 2424.25 1331.99 2439.93 1331.99L2729 1331.99 2729 1238.02 2535.32 1236.59C2513.97 1236.59 2495.47 1219.51 2495.47 1198.17L2495.47 906.305C2495.56 885.157 2478.47 867.944 2457.32 867.859L2457.01 867.859 2335.95 866.436C2313.16 866.436 2303.18 890.647 2303.18 890.647 2303.18 869.283 2291.81 866.436 2270.44 866.436L2149.4 867.859C2130.9 867.859 2116.63 886.364 2116.63 886.364L2116.63 866.436 2022.66 866.436 2022.66 1198.17C2022.66 1219.51 2005.55 1236.59 1982.79 1236.59L1885.93 1236.59C1864.79 1236.68 1847.59 1219.61 1847.5 1198.48L1847.5 1198.17 1847.5 906.305C1847.5 884.94 1829 867.859 1807.63 867.859L1482.95 866.436 1482.95 961.831 1713.63 961.831C1735.61 961.789 1753.47 979.57 1753.51 1001.55L1753.51 1001.69 1753.51 1011.64C1753.51 1033.02 1733.58 1051.52 1712.22 1051.52L1481.52 1051.52C1458.76 1051.52 1441.66 1068.6 1441.66 1089.97L1441.66 1196.74C1441.66 1219.5 1424.56 1236.58 1401.79 1236.58L1361.91 1236.58C1340.77 1236.67 1323.55 1219.61 1323.46 1198.47L1323.46 1198.16 1323.46 866.449 1228.06 866.449 1228.06 1198.19C1228.13 1219.33 1211.06 1236.53 1189.91 1236.6L1189.6 1236.6 1119.83 1236.6 1119.83 1089.98C1119.91 1068.83 1102.83 1051.62 1081.68 1051.53L1081.37 1051.53 837.859 1051.53C816.489 1051.53 797.98 1033.03 797.98 1011.65L797.98 1001.7C797.945 979.724 815.737 961.88 837.717 961.844L837.859 961.844 1119.81 961.844 1119.81 866.449 743.865 867.859C722.509 867.859 704 884.953 704 906.305L704 1114.18C704 1114.18 706.847 1128.4 713.966 1135.54 719.661 1141.22 736.747 1145.48 736.747 1145.48L987.378 1145.48C1008.73 1145.48 1025.82 1163.98 1025.82 1185.35L1025.82 1196.75C1025.82 1219.51 1008.73 1236.59 987.378 1236.59L704 1236.59ZM1575.52 1145.48 1713.65 1145.48C1735.63 1145.44 1753.49 1163.24 1753.52 1185.22L1753.52 1185.35 1753.52 1198.17C1753.52 1219.51 1735 1236.59 1713.65 1236.59L1575.52 1236.59C1552.74 1236.59 1535.65 1219.51 1535.65 1198.17L1535.65 1185.35C1535.64 1162.56 1552.72 1145.48 1575.52 1145.48ZM1198.14 660 1347.68 660 1323.46 796.675 1228.06 796.675 1198.14 660Z" fill="currentColor"/></svg>
-                                </a> -->
-                            </div>
-                            <p>We propose Physics-Informed Regression (PIR), a hybrid parameter estimation method for nonlinear dynamic models that are linear in parameters, using regularized least squares. Classified as a Scientific Machine Learning method, PIR bridges data and theory efficiently, tested on ODE and PDE models. It is compared with Physics-Informed Neural Networks (PINNs) on synthetic and real COVID-19 data from Denmark. Results show PIR outperforms PINNs, especially on complex epidemic models like S3I3R, while being faster. PIR also successfully estimates time-varying parameters, enabling reliable and real-time parameter inference.</p>
-                        </div>
-
-                        <!-- Master Thesis -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">March 2025</span>
-                            <strong>Universal Physics-Informed Neural Networks for Hidden Discovery</strong>
-                            <span class="occupation-location">Master Thesis: Jonas S. Nielsen</span>
-                            <div class="pub-links">
-                                <a href="files/jonas_master_thesis.pdf" target="_blank" title="Read PDF">Read</a>
-                            </div>
-                            <p>Physics-Informed Neural Networks (PINNs) are powerful tools for solving known differential equations, but their applicability is limited when system dynamics are only partially known. Universal PINNs (UPINNs), introduced in 2022, address this by combining PINNs with Universal Differential Equations to enable hidden dynamics discovery. This thesis explores UPINNs across diverse systems, including Lotka-Volterra, SIR, Burgers' equation, Navier-Stokes, and plasma transport in a tokamak. Results show UPINNs can recover hidden dynamics and provide data-efficient solutions, even under sparse and noisy data. Identified challenges include estimating unconstrained dynamics, model imagined phantom terms, and reduced robustness when inductive biases are ignored.</p>
-                        </div>
-
-                        <!-- Bachelors Project -->
-                        <div class="occupation-box">
-                            <span class="occupation-year">May 2022</span>
-                            <strong>Geodesic Circle Packing on 2D Surfaces</strong>
-                            <span class="occupation-location">Bachelors Project: Jonas S. Nielsen</span>
-                            <div class="pub-links">
-                                <a href="files/jonas_bachelors_project.pdf" target="_blank" title="Read PDF">Read</a>
-                            </div>
-                            <p>This report studies geodesic circle packings on 2D surfaces, extending a plane-based circle packing algorithm. The work generalizes straight lines and circles through geodesics and geodesic circles in differential geometry. Three methods are explored: analytic solutions for simple cases like the cylinder, parametrizations for spheres, and numerical methods for complex surfaces like the torus. A Python program was developed to generate circle packings using geodesic equations and the metric tensor. The project demonstrates how circle packings can be adapted to diverse geometries beyond the plane.</p>
-                        </div>
-
-                    </div>
-                
+                    <div id="publications-container" class="occupation-box-container"></div>
                 </section>
 
                 <!-- Heading -->
                 <div class="section-heading">
-                    <h3><i class="fa-solid fa-paper-plane" style="color: #99ff77;"></i>Contact</h3>
+                    <h3><i class="fa-solid fa-paper-plane" style="color: #00ff88;"></i>Contact</h3>
                 </div>
 
                 <!-- Contact -->
@@ -479,7 +174,7 @@
                         <!-- Phone -->
                         <div class="contact-box">
                             <div class="contact-box-icon">
-                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-phone" style="color: #30d15b;"></i>
                                 <strong>Phone</strong>
                             </div>
                             <a href="tel:+4524649884">+45 24 64 98 84</a>
@@ -504,112 +199,20 @@
                         </div>
 
                     </div>
-
-                    
                     
                     <div class="contact-map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130885.04437438227!2d12.42624533632221!3d55.780502136294245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46524e0cd2198e09%3A0xca6a70136052238a!2s2800%20Kongens%20Lyngby!5e0!3m2!1sda!2sdk!4v1747601240311!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+
                 </section>
-
-
-
             </div>
-
         </div>
         
         <!-- JavaScript -->
-        <script>
-            // Word Animation
-            document.addEventListener("DOMContentLoaded", () => {
-                const roles = ["Software Developer", "Machine Learning Engineer", "Mathematician", "Data Scientist", "Master of Science"];
-                const roleElement = document.getElementById("role");
-                let roleIndex = 0;
-                let charIndex = 0;
-                let typingInterval;
-
-                function typeRole() {
-                    roleElement.style.opacity = 0;
-                    setTimeout(() => {
-                        roleElement.textContent = "";
-                        charIndex = 0;
-
-                        typingInterval = setInterval(() => {
-                            if (charIndex < roles[roleIndex].length) {
-                                roleElement.textContent += roles[roleIndex].charAt(charIndex);
-                                charIndex++;
-                            } else {
-                                clearInterval(typingInterval);
-                                setTimeout(() => {
-                                    roleIndex = (roleIndex + 1) % roles.length;
-                                    typeRole();
-                                }, 1000); // Pause before starting the next word
-                            }
-                        }, 150); // Typing speed
-
-                        roleElement.style.opacity = 1;
-                    }, 500); // Fade out duration
-                }
-                // Start typing the first role
-                typeRole();
-            });
-        
-            // Menu Active Link Highlighting
-            document.addEventListener("DOMContentLoaded", () => {
-                const sections = document.querySelectorAll("section");
-                const navLinks = document.querySelectorAll(".nav-menu a");
-                const headerOffset = 100; // adjust to your sticky menu height
-
-                function setActiveLink() {
-                    let currentSection = "";
-                    sections.forEach((sec) => {
-                        const sectionTop = sec.offsetTop;
-                        const sectionHeight = sec.offsetHeight;
-
-                        if (window.scrollY >= sectionTop - sectionHeight / 3 - headerOffset) {
-                            currentSection = sec.getAttribute("id");
-                        }
-                    });
-
-                    navLinks.forEach((link) => {
-                        link.classList.remove("active");
-                        if (link.getAttribute("href") === `#${currentSection}`) {
-                            link.classList.add("active");
-                        }
-                    });
-                }
-
-                setActiveLink(); // Initial call
-
-                window.addEventListener("scroll", setActiveLink);
-            });
-            
-
-            // Set your birthdate here:
-            const birthDate = new Date('1999-02-18'); // YYYY-MM-DD format
-
-            function calculateAge(birthDate) {
-                const today = new Date();
-                let age = today.getFullYear() - birthDate.getFullYear();
-                const m = today.getMonth() - birthDate.getMonth();
-                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-                    age--;
-                }
-                // Check if the age is NaN
-                if (isNaN(age) || age < 0) {
-                    return "Many";
-                } else if (age > 99) {
-                    return "100+";
-                } else {
-                    return age;
-                }
-            }
-
-            document.getElementById('age').textContent = calculateAge(birthDate);
-
-
-        </script>
-
+        <script src="js/content-loader.js"></script>
+        <script src="js/word-animator.js"></script>
+        <script src="js/scroll-spy.js"></script>
+        <script src="js/age-calculator.js"></script>
     </body>
 
 </html>

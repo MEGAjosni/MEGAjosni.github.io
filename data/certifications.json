@@ -1,0 +1,14 @@
+[
+    {
+        "name": "AZ-104",
+        "organization": "Microsoft",
+        "link": "https://learn.microsoft.com/en-us/users/jonasseborgnielsen-8140/credentials/e2103dad51ef8c21",
+        "logo": "../images/certificates/az-104-badge.png"
+    },
+    {
+        "name": "HCTA0",
+        "organization": "HashiCorp",
+        "link": "https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003",
+        "logo": "../images/certificates/hcta0-003-badge.png"
+    }
+]

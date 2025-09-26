@@ -1,0 +1,39 @@
+[
+    {
+        "timestamp": "July 2025",
+        "title": "Physics-Informed Regression: Parameter Estimation in Nonlinear Models",
+        "authors": "Jonas S. Nielsen, Marcus G. Jacobsen, Albert B. Olson, Mads P. Sørensen, Allan P. Engsig-Karup",
+        "abstract": "We propose Physics-Informed Regression (PIR), a hybrid parameter estimation method for nonlinear dynamic models that are linear in parameters, using regularized least squares. Classified as a Scientific Machine Learning method, PIR bridges data and theory efficiently, tested on ODE and PDE models. It is compared with Physics-Informed Neural Networks (PINNs) on synthetic and real COVID-19 data from Denmark. Results show PIR outperforms PINNs, especially on complex epidemic models like S3I3R, while being faster. PIR also successfully estimates time-varying parameters, enabling reliable and real-time parameter inference.",
+        "links": [
+            {
+                "type": "arXiv",
+                "url": "http://arxiv.org/abs/2508.19249",
+                "logo": "../images/logos/arxiv.svg"
+            }
+        ]
+    },
+    {
+        "timestamp": "March 2025",
+        "title": "Master Thesis: Universal Physics-Informed Neural Networks for Hidden Discovery",
+        "authors": "Jonas S. Nielsen",
+        "abstract": "Physics-Informed Neural Networks (PINNs) are powerful tools for solving known differential equations, but their applicability is limited when system dynamics are only partially known. Universal PINNs (UPINNs), introduced in 2022, address this by combining PINNs with Universal Differential Equations to enable hidden dynamics discovery. This thesis explores UPINNs across diverse systems, including Lotka-Volterra, SIR, Burgers' equation, Navier-Stokes, and plasma transport in a tokamak. Results show UPINNs can recover hidden dynamics and provide data-efficient solutions, even under sparse and noisy data. Identified challenges include estimating unconstrained dynamics, model imagined phantom terms, and reduced robustness when inductive biases are ignored.",
+        "links": [
+            {
+                "type": "pdf",
+                "url": "../files/jonas_master_thesis.pdf"
+            }
+        ]
+    },
+    {
+        "timestamp": "May 2022",
+        "title": "Bachelors Project: Geodesic Circle Packing on 2D Surfaces",
+        "authors": "Jonas S. Nielsen",
+        "abstract": "This report studies geodesic circle packings on 2D surfaces, extending a plane-based circle packing algorithm. The work generalizes straight lines and circles through geodesics and geodesic circles in differential geometry. Three methods are explored: analytic solutions for simple cases like the cylinder, parametrizations for spheres, and numerical methods for complex surfaces like the torus. A Python program was developed to generate circle packings using geodesic equations and the metric tensor. The project demonstrates how circle packings can be adapted to diverse geometries beyond the plane.",
+        "links": [
+            {
+                "type": "pdf",
+                "url": "../files/jonas_bachelors_project.pdf"
+            }
+        ]
+    }
+]

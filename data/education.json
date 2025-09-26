@@ -1,0 +1,29 @@
+[
+    {
+        "startTime": "Sep. 2022",
+        "endTime": "Mar. 2025",
+        "title": "MSc Eng Mathematical Modeling and Computation",
+        "location": "Technical University of Denmark - DTU",
+        "description": "I have specialized in machine learning techniques focusing on deep learning, computer vision, Bayesian and model-based machine learning, computational data analysis, and high-performance computing. My thesis involved a deep investigation into Universal Physics-Informed Neural Networks for discovering hidden/unknown dynamics in dynamical systems.",
+        "logo": "../images/logos/dtu.svg",
+        "link": "https://www.dtu.dk/english/education/graduate/msc-programmes/mathematical-modelling-and-computation"
+    },
+    {
+        "startTime": "Sep. 2019",
+        "endTime": "May 2022",
+        "title": "BSc Eng Mathematics and Technology",
+        "location": "Technical University of Denmark - DTU",
+        "description": "I have acquired fundamental knowledge and skills in applied mathematics and data-driven techniques with a focus on mathematical modelling, optimization, and numerical methods through courses in machine learning, graph theory, image analysis, operations research, numerical algorithms, simulation, statistics, probability, advanced mathematics, and programming.",
+        "logo": "../images/logos/dtu.svg",
+        "link": "https://www.dtu.dk/uddannelse/bachelor/uddannelsesretninger/anvendt-matematik"
+    },
+    {
+        "startTime": "Aug. 2015",
+        "endTime": "Jun. 2018",
+        "title": "Gymnasium: Higher Technical Exam - HTX",
+        "location": "Erhvervsskolen Nordsjælland - ESNORD",
+        "description": "I developed valueable academic and personal skills that supported my transition from pupil to university student. Taking additional A-level subjects in Mathematics, Construction, Physics, and Chemistry, I gained a solid technical foundation and strengthened analytical mindset well suited for pursuing a university degree in engineering.",
+        "logo": "../images/logos/esnord.png",
+        "link": "https://unord.dk/uddannelser/matematik-a-fysik-a"
+    }
+]

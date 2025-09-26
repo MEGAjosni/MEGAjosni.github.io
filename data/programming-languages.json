@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Python",
+        "proficiency": "Advanced",
+        "logo": "images/logos/python.svg",
+        "link": "https://www.python.org/"
+    },
+    {
+        "name": "Julia",
+        "proficiency": "Research",
+        "logo": "images/logos/julia.svg",
+        "link": "https://www.julialang.org/"
+    },
+    {
+        "name": "Matlab",
+        "proficiency": "Simulation",
+        "logo": "images/logos/matlab.svg",
+        "link": "https://www.mathworks.com/products/matlab.html"
+    },
+    {
+        "name": "C/C++",
+        "proficiency": "Basic",
+        "logo": "images/logos/cpp.svg",
+        "link": "https://cplusplus.com/"
+    },
+    {
+        "name": "C#",
+        "proficiency": ".NET",
+        "logo": "images/logos/csharp.svg",
+        "link": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+    },
+    {
+        "name": "R",
+        "proficiency": "Statistics",
+        "logo": "images/logos/r.svg",
+        "link": "https://www.r-project.org/"
+    },
+    {
+        "name": "Java",
+        "proficiency": "Basic",
+        "logo": "images/logos/java.svg",
+        "link": "https://www.java.com/"
+    },
+    {
+        "name": "HTML",
+        "proficiency": "Portfolio",
+        "logo": "images/logos/html5.svg",
+        "link": "https://html.spec.whatwg.org/"
+    },
+    {
+        "name": "LaTeX",
+        "proficiency": "Advanced",
+        "logo": "images/logos/latex.svg",
+        "link": "https://www.latex-project.org/"
+    },
+    {
+        "name": "Terraform",
+        "proficiency": "Infrastructure",
+        "logo": "images/logos/terraform.svg",
+        "link": "https://developer.hashicorp.com/terraform/"
+    }
+]

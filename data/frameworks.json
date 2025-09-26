@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Azure",
+        "proficiency": "IaaS/PaaS",
+        "logo": "../images/logos/azure.svg",
+        "link": "https://azure.microsoft.com/"
+    },
+    {
+        "name": "Entra ID",
+        "proficiency": "Identity",
+        "logo": "../images/logos/entraid.svg",
+        "link": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id/"
+    },
+    {
+        "name": "DevOps",
+        "proficiency": "Versioning",
+        "logo": "../images/logos/azuredevops.svg",
+        "link": "https://azure.microsoft.com/en-us/products/devops/"
+    },
+    {
+        "name": "Git",
+        "proficiency": "Versioning",
+        "logo": "../images/logos/git.svg",
+        "link": "https://git-scm.com/"
+    },
+    {
+        "name": "VS Code",
+        "proficiency": "IDE",
+        "logo": "../images/logos/vscode.svg",
+        "link": "https://code.visualstudio.com/"
+    }
+]
