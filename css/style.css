@@ -401,9 +401,11 @@ body{
     justify-items: center;
     width: 100px;
 }
-.skill-item img{
+img.skill-logo{
+    display: block;
     height: 60px;
 }
+
 /* Skill item Name */
 .skill-item strong{
     color: var(--text-color);
@@ -413,7 +415,7 @@ body{
     margin-top: 5px;
 }
 /* Skill item Location */
-.skill-item-location{
+.skill-item-tagline{
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-color);
@@ -436,8 +438,21 @@ body{
     display: block;
 }
 /* Special case for certificates */
+.logo-container {
+    position: relative;   /* makes the container the reference point */
+    display: inline-block;
+    justify-items: center;
+    width: 100%;
+}
 img.certificate{
+    display: block;
     height: 100px;
+}
+img.brand-logo{
+    position: absolute;
+    height: 35%;
+    right: 0px;
+    bottom: -5px;
 }
 
 
