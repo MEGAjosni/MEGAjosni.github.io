@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
             container.appendChild(description);
           }
 
-          // Links
+          // links
           if (obj.logo) {
-            const logoLink = document.createElement('a');
-            logoLink.href = obj.link;
-            logoLink.target = '_blank';
+            const logolink = document.createElement('a');
+            logolink.href = obj.link;
+            logolink.target = '_blank';
 
             const logoDiv = document.createElement('div');
             logoDiv.className = 'occupation-logo';
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
             logoImg.alt = obj.location + ' Logo';
 
             logoDiv.appendChild(logoImg);
-            logoLink.appendChild(logoDiv);
-            container.appendChild(logoLink);
+            logolink.appendChild(logoDiv);
+            container.appendChild(logolink);
           }
 
           
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             obj.links.forEach(linkObj => {
               const link = document.createElement('a');
-              link.href = linkObj.url;
+              link.href = linkObj.link;
               link.target = '_blank';
 
               if (linkObj.type.toLowerCase() === 'pdf') {
@@ -110,10 +110,20 @@ document.addEventListener('DOMContentLoaded', () => {
           container.href = obj.link;
 
           // Logo
+          const logoContainer = document.createElement('div');
+          logoContainer.className = 'logo-container';
+          container.appendChild(logoContainer);
+
           const logo = document.createElement('img');
-          if (isCertification) {logo.className = 'certificate'};
-          logo.src = obj.logo;
-          container.appendChild(logo);
+          logo.src = obj.logo || obj.badge || null;
+          logo.className = isCertification ? 'certificate' : 'skill-logo';
+          logoContainer.appendChild(logo);
+          if (obj.brandLogo) {
+            const brandLogo = document.createElement('img');
+            brandLogo.className = 'brand-logo';
+            brandLogo.src = obj.brandLogo;
+            logoContainer.appendChild(brandLogo);
+          }
 
           // Name
           const name = document.createElement('strong');
@@ -122,8 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
           // Organization
           const organization = document.createElement('span');
-          organization.textContent = obj.organization || obj.proficiency || null;
-          organization.className = 'skill-item-location';
+          organization.textContent = obj.issuer || obj.proficiency || null;
+          organization.className = 'skill-item-tagline';
           container.appendChild(organization);
           
           app.appendChild(container);

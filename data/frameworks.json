@@ -3,19 +3,29 @@
         "name": "Azure",
         "proficiency": "IaaS/PaaS",
         "logo": "../images/logos/azure.svg",
-        "link": "https://azure.microsoft.com/"
+        "link": "https://azure.microsoft.com/",
+        "brandLogo": "../images/logos/microsoft.svg"
     },
     {
         "name": "Entra ID",
         "proficiency": "Identity",
         "logo": "../images/logos/entraid.svg",
-        "link": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id/"
+        "link": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id/",
+        "brandLogo": "../images/logos/microsoft.svg"
     },
     {
         "name": "DevOps",
         "proficiency": "Versioning",
         "logo": "../images/logos/azuredevops.svg",
-        "link": "https://azure.microsoft.com/en-us/products/devops/"
+        "link": "https://azure.microsoft.com/en-us/products/devops/",
+        "brandLogo": "../images/logos/microsoft.svg"
+    },
+    {
+        "name": "VS Code",
+        "proficiency": "IDE",
+        "logo": "../images/logos/vscode.svg",
+        "link": "https://code.visualstudio.com/",
+        "brandLogo": "../images/logos/microsoft.svg"
     },
     {
         "name": "Git",
@@ -24,9 +34,10 @@
         "link": "https://git-scm.com/"
     },
     {
-        "name": "VS Code",
-        "proficiency": "IDE",
-        "logo": "../images/logos/vscode.svg",
-        "link": "https://code.visualstudio.com/"
+        "name": "Terraform",
+        "proficiency": "Infrastructure",
+        "logo": "images/logos/terraform.svg",
+        "link": "https://developer.hashicorp.com/terraform/",
+        "brandLogo": "../images/logos/hashicorp.svg"
     }
 ]

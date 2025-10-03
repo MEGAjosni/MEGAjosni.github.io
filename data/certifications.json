@@ -1,9 +1,10 @@
 [
     {
         "name": "AZ-104",
-        "organization": "Microsoft",
+        "issuer": "Microsoft",
         "link": "https://learn.microsoft.com/en-us/users/jonasseborgnielsen-8140/credentials/e2103dad51ef8c21",
-        "logo": "../images/certificates/az-104-badge.png"
+        "badge": "../images/certificates/az-104-badge.png",
+        "brandLogo": "../images/logos/azure.svg"
     },
     {
         "name": "HCTA0",

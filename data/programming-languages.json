@@ -52,11 +52,5 @@
         "proficiency": "Advanced",
         "logo": "images/logos/latex.svg",
         "link": "https://www.latex-project.org/"
-    },
-    {
-        "name": "Terraform",
-        "proficiency": "Infrastructure",
-        "logo": "images/logos/terraform.svg",
-        "link": "https://developer.hashicorp.com/terraform/"
     }
 ]

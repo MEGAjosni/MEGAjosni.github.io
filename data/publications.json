@@ -7,7 +7,7 @@
         "links": [
             {
                 "type": "arXiv",
-                "url": "http://arxiv.org/abs/2508.19249",
+                "link": "http://arxiv.org/abs/2508.19249",
                 "logo": "../images/logos/arxiv.svg"
             }
         ]
@@ -20,7 +20,7 @@
         "links": [
             {
                 "type": "pdf",
-                "url": "../files/jonas_master_thesis.pdf"
+                "link": "../files/jonas_master_thesis.pdf"
             }
         ]
     },
@@ -32,7 +32,7 @@
         "links": [
             {
                 "type": "pdf",
-                "url": "../files/jonas_bachelors_project.pdf"
+                "link": "../files/jonas_bachelors_project.pdf"
             }
         ]
     }
