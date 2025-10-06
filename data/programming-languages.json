@@ -19,7 +19,7 @@
     },
     {
         "name": "C/C++",
-        "proficiency": "Basic",
+        "proficiency": "HPC",
         "logo": "images/logos/cpp.svg",
         "link": "https://cplusplus.com/"
     },
@@ -43,13 +43,13 @@
     },
     {
         "name": "HTML",
-        "proficiency": "Portfolio",
+        "proficiency": "Frontend",
         "logo": "images/logos/html5.svg",
         "link": "https://html.spec.whatwg.org/"
     },
     {
         "name": "LaTeX",
-        "proficiency": "Advanced",
+        "proficiency": "Reporting",
         "logo": "images/logos/latex.svg",
         "link": "https://www.latex-project.org/"
     }

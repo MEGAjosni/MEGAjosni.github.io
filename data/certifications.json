@@ -7,7 +7,14 @@
         "brandLogo": "../images/logos/azure.svg"
     },
     {
-        "name": "HCTA0",
+        "name": "DP-700",
+        "issuer": "Microsoft",
+        "link": "https://learn.microsoft.com/en-us/users/jonasseborgnielsen-8140/credentials/e2103dad51ef8c21",
+        "badge": "../images/certificates/az-104-badge.png",
+        "brandLogo": "../images/logos/fabric.svg"
+    },
+    {
+        "name": "HCTA0-003",
         "issuer": "HashiCorp",
         "link": "https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003",
         "badge": "../images/certificates/hcta0-003-badge.png",

@@ -399,6 +399,8 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    justify-content: center;
+    overflow: visible;
     width: 100px;
 }
 img.skill-logo{
@@ -413,6 +415,7 @@ img.skill-logo{
     font-weight: 700;
     text-align: center;
     margin-top: 5px;
+    white-space: nowrap;
 }
 /* Skill item Location */
 .skill-item-tagline{
@@ -421,6 +424,7 @@ img.skill-logo{
     color: var(--text-color);
     opacity: 0.6;
     text-align: center;
+    white-space: nowrap;
 }
 /* Skill item Percentage bar */
 .skill-item-bar{
@@ -442,7 +446,7 @@ img.skill-logo{
     position: relative;   /* makes the container the reference point */
     display: inline-block;
     justify-items: center;
-    width: 100%;
+    width: 100px;
 }
 img.certificate{
     display: block;
