@@ -7,13 +7,6 @@
         "brandLogo": "../images/logos/azure.svg"
     },
     {
-        "name": "DP-700",
-        "issuer": "Microsoft",
-        "link": "https://learn.microsoft.com/en-us/users/jonasseborgnielsen-8140/credentials/e2103dad51ef8c21",
-        "badge": "../images/certificates/az-104-badge.png",
-        "brandLogo": "../images/logos/fabric.svg"
-    },
-    {
         "name": "HCTA0-003",
         "issuer": "HashiCorp",
         "link": "https://www.credly.com/badges/26070f6d-3330-4717-b61f-7a869c95e89c/public_url",

@@ -13,3 +13,14 @@
         "link": "https://azure.microsoft.com/en-us/products/devops/",
         "brandLogo": "../images/logos/microsoft.svg"
     },
+
+
+
+    
+    {
+        "name": "DP-700",
+        "issuer": "Microsoft",
+        "link": "https://learn.microsoft.com/en-us/users/jonasseborgnielsen-8140/credentials/e2103dad51ef8c21",
+        "badge": "../images/certificates/az-104-badge.png",
+        "brandLogo": "../images/logos/fabric.svg"
+    },
