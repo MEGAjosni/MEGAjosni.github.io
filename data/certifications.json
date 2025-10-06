@@ -16,8 +16,8 @@
     {
         "name": "HCTA0-003",
         "issuer": "HashiCorp",
-        "link": "https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003",
-        "badge": "../images/certificates/hcta0-003-badge.png",
+        "link": "https://www.credly.com/badges/26070f6d-3330-4717-b61f-7a869c95e89c/public_url",
+        "logo": "../images/certificates/hcta0-003-badge.png",
         "brandLogo": "../images/logos/terraform.svg"
     }
 ]
