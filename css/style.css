@@ -40,7 +40,8 @@ ul{
 .social-container a,
 .occupation-logo,
 .occupation-logo img,
-.pub-links a img
+.pub-links a img,
+.dannebrog-ribbon
 {
     transition: transform var(--transition-speed) ease, filter var(--transition-speed) ease;
 }
@@ -48,6 +49,7 @@ ul{
     .skill-item,
     .social-container a,
     .occupation-logo,
+    .dannebrog-ribbon
 ):hover{
     transform: scale(1.15);
     cursor: pointer;
@@ -142,7 +144,9 @@ body{
 
 /* Navigation Menu */
 .nav-menu{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    column-gap: 75px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -150,7 +154,7 @@ body{
     height: 50px;
     background-color: var(--top-pane-bg-color);
     backdrop-filter: blur(5px);
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .nav-menu a{
