@@ -661,6 +661,7 @@ img.brand-logo{
         top: 0;
         /* padding: 10px; */
         border-radius: 0;
+        height: 150px;
         width: 100%;
         margin: 0;
         /* margin: 0 auto; */
@@ -703,9 +704,13 @@ img.brand-logo{
         display: none;
     }
     .nav-menu {
+        column-gap: 40px;
         top: auto;      /* reset top */
         bottom: 0;      /* stick to bottom */
         position: fixed; /* stays visible while scrolling */ 
+        justify-content: space-evenly;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .section-container:last-child{
