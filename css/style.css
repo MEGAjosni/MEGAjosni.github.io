@@ -161,7 +161,7 @@ body{
     color: var(--text-color);
     font-weight: 600;
 }
-.nav-menu a i{
+.nav-menu a img{
     padding-right: 5px;
 }
 .nav-menu a:hover, .nav-menu a.active{
@@ -333,16 +333,19 @@ body{
     
 /* Skills */
 .section-heading{
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
     position: relative;
     justify-items: center;
+    align-items: center;
+    justify-content: center;
     /* margin-left: 20px;
     margin-top: 10px; */
     padding: 10px 20px;
     border-radius: 25px 25px 0px 0px;
     background-color: var(--top-section-bg-color);
     backdrop-filter: blur(5px);
+    padding-right: 25px;
     /* border-radius: 20px 20px 0px 0px; */
 }
 .section-heading h3{
@@ -350,13 +353,9 @@ body{
     font-size: 2rem;
     font-weight: 550;
     position: relative;
-    left: -25px;
 }
-.section-heading h3 i {
-    color: var(--primary-color);
+.section-heading img {
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2rem;
     width: 40px;
     height: 40px;
@@ -385,9 +384,10 @@ body{
     background-color: var(--pane-bg-color);
     width: fit-content;
 }
-.skill-heading i {
+.skill-heading i, .skill-heading img{
     display: flex;
     width: 32px;
+    height: 32px;
     margin-right: 5px;
     align-items: center;
 }
@@ -577,7 +577,7 @@ img.brand-logo{
     align-items: center;
     grid-gap: 10px;
 }
-.contact-box-icon i{
+.contact-box-icon img{
     display: flex;
     color: var(--primary-color);
     font-size: 1.6rem;
