@@ -14,7 +14,7 @@ ul{
 /* Root Colors */
 :root{
     --primary-color: #30d15b;
-    --primary-color-transparent: #1f4918;
+    --primary-color-transparent: #1f491877;
     --link-color: #0099ff;
     --text-color: #ffffff;
     --bg-color: #1c1c1e;
@@ -110,15 +110,6 @@ ul{
   grid-column: 2;
   background: var(--dk-white);
 }
-
-
-
-
-
-
-
-
-
 
 
 /* Body */
@@ -292,12 +283,13 @@ body{
     font-weight: 500;
 }
 #about h1 span{
-    background-color: var(--primary-color);
-    color: var(--bg-color);
+    border: 4px solid var(--primary-color);
+    background-color: var(--primary-color-transparent);
+    color: var(--primary-color);
     padding: 0px 20px;
-    border-radius: 30px;
+    border-radius: 50px;
     font-size: 2.6rem;
-    font-weight: 650;
+    font-weight: 600;
 }
 #about p{
     color: var(--text-color);
