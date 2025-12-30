@@ -7,6 +7,13 @@
         "brandLogo": "../images/logos/azure.svg"
     },
     {
+        "name": "DP-600",
+        "issuer": "Microsoft",
+        "link": "https://learn.microsoft.com/en-us/users/jonasseborgnielsen-8140/credentials/8014a62101909267",
+        "badge": "../images/certificates/dp-600-badge.png",
+        "brandLogo": "../images/logos/fabric.svg"
+    },
+    {
         "name": "DP-700",
         "issuer": "Microsoft",
         "link": "https://learn.microsoft.com/en-us/users/jonasseborgnielsen-8140/credentials/6773c536a6bae152",
